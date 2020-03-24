@@ -1,8 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Артур Эльцер](https://up.htmlacademy.ru/adaptive/19/user/1223801).
-* Наставник: `Неизвестно`.
-
+* Наставник: [Артур Трифонов](https://htmlacademy.ru/profile/wrgraff.
 ---
 
 **Обратите внимание, что папка с вашими исходными файлами — `source/`.**
