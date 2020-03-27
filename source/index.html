@@ -7,52 +7,29 @@
 </head>
 
 <body>
-
-    <header class="page-header">
-        <a class="page-header__logo" href="#">
-            <span class="page-header__title">PINK</span>
-        </a>
-        <nav class="main-nav">
-            <button type="button" class="main-nav__toggle">Меню</button>
-            <div class="main-nav__wrapper">
-                <ul class="main-nav__list site-list">
-                    <li class="site-list__item">
-                        <a href="#">Главная</a>
-                    </li>
-                    <li class="site-list__item">
-                        <a href="#">Фотографии</a>
-                    </li>
-                    <li class="site-list__item">
-                        <a href="#">Конкурс</a>
-                    </li>
-                    <li class="site-list__item">
-                        <a href="#">Htmlacademy</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-        <!-- тут надо еще разобраться с формой входа,  -->
-
-
+    <header class="main-nav">
+        <a href="#" class="main-nav__logo">Pink</a>
+        <button class="main-nav__toggle" type="button">Меню</button>
+        <ul class="main-nav__list">
+            <li class="main-nav__item main-nav__item--active"><a href="#">Главная</a></li>
+            <li class="main-nav__item"><a href="#">Фотографии</a></li>
+            <li class="main-nav__item"><a href="#">Конкурс</a></li>
+            <li class="main-nav__item"><a href="#">Html Academy</a></li>
+        </ul>
     </header>
-    <main class="page-main">
-        <h1 class="visually-hidden">Взгляните на жизнь иначе</h1>
-        <img class="page-main__background" src="#" alt="Превью приложения">
-        <section class="app-downloads">
-            <a class="btn app-downloads__btn">Скачать приложение</a>
-            <ul class="app-downloads__list">
-                <li class="app-downloads__item">
-                    <a class="app-downloads__link" href="#">ios</a></li>
-                <li class="app-downloads__item">
-                    <a class="app-downloads__link" href="#">android</a></li>
-                <li class="app-downloads__item">
-                    <a class="app-downloads__link" href="#">windows mobile</a></li>
+    <main class="main-content">
+        <section class="download">
+            <!-- тут должна быть подложка, картинка с фоном и телефоном, есть ли смысл вставлять img?   -->
+            <a href="#" class="dowload__btn btn">Скачать приложение</a>
+            <ul class="download__list">
+                <li class="download__item"><a href="#" class="download__link">ios</a></li>
+                <li class="download__item"><a href="#" class="download__link">android</a></li>
+                <li class="download__item"><a href="#" class="download__link">windows mobile</a></li>
             </ul>
-            <span class="app-downloads__title">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</span>
+
         </section>
 
     </main>
-
 
 </body>
 
