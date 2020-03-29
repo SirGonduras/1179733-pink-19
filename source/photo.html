@@ -119,9 +119,20 @@
             </div>
           </article>
         </li>
-
       </ul>
-
+    </section>
+    <section class="photo-loading">
+      <h2 class="visually-hidden">Загрузка фотографий пользователя</h2>
+      <form action="echo" method="POST" class="photo-loading__form">
+        <p class="photo-loading__title">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+        <img class="photo-loading__picture" src="https://via.placeholder.com/280x374"
+          alt="Предварительный просмотр фотографии">
+        <div class="photo-loading__tools">
+          <!-- тут пока все плохо. -->
+          <input type="submit" class="photo-loading__button photo-loading__button--submit" value="Запостить">          
+          <input type="submit" class="photo-loading__button photo-loading__button--submit" value="Отмена">
+        </div>
+      </form>
     </section>
   </main>
   <footer class="footer">
