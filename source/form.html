@@ -27,7 +27,7 @@
       <p class="contest__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу
         бонусную карту! Пожалуйста, заполните форму ниже:</p>
       <fieldset class="contest__fieldset contest__fieldset--info">
-        <ul class="contest__list">
+        <ul class="contest__list contest__list--info">
           <li class="contest__item">
             <label class="contest__label" for="surname"> Фамилия:</label>
             <input type="text" class="contest__input" id="surname" name="surname" placeholder="Укажите фамилию *"
@@ -39,10 +39,40 @@
           </li>
           <li class="contest__item">
             <label class="contest__label" for="patronymic"> Отчество:</label>
-            <input type="text" class="contest__input" id="patronymic" name="patronymic" placeholder="Ну и отчество тоже" >
+            <input type="text" class="contest__input" id="patronymic" name="patronymic"
+              placeholder="Ну и отчество тоже">
           </li>
-
         </ul>
+      </fieldset>
+      <fieldset class="contest__list contest__list--achievement">
+        <legend class="contest__title contest__title-achievement">Ваши безбашенные достижения в путешествии</legend>
+          <ul class="contest__list contest__list--achievement">
+            <li class="contest__item">
+              <input class="contest__input contest__input--checkbox" type="checkbox" name="selfi" id="selfi" checked>
+              <label class="contest__label contest__label--checkbox" for="selfi">Сделал селфи с акулой</label>
+            </li>
+            <li class="contest__item">
+              <input class="contest__input contest__input--checkbox" type="checkbox" name="beach" id="beach" checked>
+              <label class="contest__label contest__label--checkbox" for="beach">Обгорел на пляже</label>
+            </li>
+            <li class="contest__item">
+              <input class="contest__input contest__input--checkbox" type="checkbox" name="chuck" id="chuck">
+              <label class="contest__label contest__label--checkbox" for="chuck">Видел Чака Норриса</label>
+            </li>
+            <li class="contest__item">
+              <input class="contest__input contest__input--checkbox" type="checkbox" name="souvenir" id="souvenir">
+              <label class="contest__label contest__label--checkbox" for="souvenir">Накупил сувениров</label>
+            </li>
+            <li class="contest__item">
+              <input class="contest__input contest__input--checkbox" type="checkbox" name="tower" id="tower" checked>
+              <label class="contest__label contest__label--checkbox" for="tower">Удержал башню</label>
+            </li>
+            <li class="contest__item">
+              <input class="contest__input contest__input--checkbox" type="checkbox" name="hotel" id="hotel">
+              <label class="contest__label contest__label--checkbox" for="hotel">Разгромил отель</label>
+            </li>
+
+          </ul>
 
       </fieldset>
 
