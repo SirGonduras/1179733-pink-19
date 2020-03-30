@@ -22,11 +22,12 @@
   <main class="main-content">
     <h1 class="visually-hidden">Конкурс от Pink</h1>
     <section class="contest">
-      <h2 class="contest__title">Конкурс на самое безбашенное путешествие с Пинк</h2>
-      <form class="contest__form" action="echo" method="POST"></form>
-      <p class="contest__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу
+      <h2 class="contest__name">Конкурс на самое безбашенное путешествие с Пинк</h2>
+      <form class="contest__form" action="echo" method="POST">
+      <p class="contest__heading">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу
         бонусную карту! Пожалуйста, заполните форму ниже:</p>
       <fieldset class="contest__fieldset contest__fieldset--info">
+        <legend class="contest__title">Как вас зовут</legend>
         <ul class="contest__list contest__list--info">
           <li class="contest__item">
             <label class="contest__label" for="surname"> Фамилия:</label>
@@ -45,7 +46,7 @@
         </ul>
       </fieldset>
       <fieldset class="contest__fieldset contest__fieldset--achievement">
-        <legend class="contest__title contest__title-achievement">Ваши безбашенные достижения в путешествии</legend>
+        <legend class="contest__title">Ваши безбашенные достижения в путешествии</legend>
           <ul class="contest__list contest__list--achievement">
             <li class="contest__item">
               <input class="contest__input contest__input--checkbox" type="checkbox" name="selfi" id="selfi" checked>
@@ -74,6 +75,7 @@
           </ul>
       </fieldset>
       <fieldset class="contest__fieldset contest__fieldset--contacts">
+        <legend class="contest__title visually-hidden">Ваши контакты</legend>
         <ul class="contest__list contest__list--contacts">
           <li class="contest__item contest__item--contacts">
             <label class="contest__label contest__label--contacts" for="tel">Номер телефона</label>
@@ -86,7 +88,7 @@
         </ul>
       </fieldset>
       <fieldset class="contest__fieldset contest__fieldset--app">
-        <legend class="contest__title contest__title--app">С каким приложением путешествовали?</legend>
+        <legend class="contest__title">С каким приложением путешествовали?</legend>
         <ul class="contest__list contest__list--app">
           <li class="contest__item contest__item--app">
             <input class="contest__input contest__input--radio" type="radio" name="trip-app" id="ios" value="ios" checked>
@@ -102,14 +104,14 @@
           </li>
         </ul>
       </fieldset>
-      <fieldset class="contest__fieldset contest__fieldset--emotion">
-        <legend class="contest__title contest__title--emotion">Опишите свои эмоции</legend>
+      <div class="contest__fieldset contest__fieldset--emotion">
+        <p class="contest__title contest__title--emotion">Опишите свои эмоции</p>
         <textarea class="contest__textarea" name="contest-emotion" id="contest-emotion" cols="30" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
 
-      </fieldset>
-      <input  class="contest__submit" type="submit" value="Отправить форму">
+      </div>
+      <button  class="contest__submit" type="submit">Отправить форму</button>
       <p class="contest__prompt">* — обязательные поля</p>
-
+    </form>
     </section>
 
   </main>
