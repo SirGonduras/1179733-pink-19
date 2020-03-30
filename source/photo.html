@@ -129,8 +129,18 @@
           alt="Предварительный просмотр фотографии">
         <div class="photo-loading__tools">
           <!-- тут пока все плохо. -->
-          <input type="submit" class="photo-loading__button photo-loading__button--submit" value="Запостить">
-          <input type="submit" class="photo-loading__button photo-loading__button--submit" value="Отмена">
+          <div class="photo-loading__filters"><button type="button"
+              class="photo-loading__button-filter photo-loading__button-filter--current"> Обрезка</button>
+            <button type="button" class="photo-loading__button-filter ">Заливка</button>
+            <button type="button" class="photo-loading__button-filter">Контраст</button>
+            <input type="range"  min="1" max="100" name="crop" value="50" class="photo-loading__range-bar photo-loading__range-bar--current">
+            <input type="range" min="1" max="100" name="fill" value="50" class="photo-loading__range-bar">
+            <input type="range" min="1" max="100" name="contrast"  value="50" class="photo-loading__range-bar">
+          </div>
+
+          <div class="photo-loading__submit-menu"><button type="submit" class="photo-loading__button">Запостить</button>
+            <button type="reset" class="photo-loading__button photo-loading__button--cancel">Отмена</button>
+          </div>
         </div>
       </form>
     </section>
