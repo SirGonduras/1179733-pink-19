@@ -29,16 +29,16 @@
       <fieldset class="contest__fieldset contest__fieldset--info">
         <legend class="contest__title">Как вас зовут</legend>
         <ul class="contest__list contest__list--info">
-          <li class="contest__item">
-            <label class="contest__label" for="surname"> Фамилия:</label>
-            <input type="text" class="contest__input" id="surname" name="surname" placeholder="Укажите фамилию *"
+          <li class="contest__item checkbox ">
+            <label class="checkbox__label" for="surname"> Фамилия:</label>
+            <input type="text" class="checkbox__input" id="surname" name="surname" placeholder="Укажите фамилию *"
               required>
           </li>
-          <li class="contest__item">
+          <li class="contest__item checkbox">
             <label class="contest__label" for="name"> Имя:</label>
             <input type="text" class="contest__input" id="name" name="name" placeholder="Введите ваше имя *" required>
           </li>
-          <li class="contest__item">
+          <li class="contest__item checkbox">
             <label class="contest__label" for="patronymic"> Отчество:</label>
             <input type="text" class="contest__input" id="patronymic" name="patronymic"
               placeholder="Ну и отчество тоже">
@@ -48,59 +48,59 @@
       <fieldset class="contest__fieldset contest__fieldset--achievement">
         <legend class="contest__title">Ваши безбашенные достижения в путешествии</legend>
           <ul class="contest__list contest__list--achievement">
-            <li class="contest__item">
-              <input class="contest__input contest__input--checkbox" type="checkbox" name="selfi" id="selfi" checked>
-              <label class="contest__label contest__label--checkbox" for="selfi">Сделал селфи с акулой</label>
+            <li class="contest__item checkbox">
+              <input class="checkbox__input" type="checkbox" name="selfi" id="selfi" checked>
+              <label class="checkbox__label" for="selfi">Сделал селфи с акулой</label>
             </li>
-            <li class="contest__item">
-              <input class="contest__input contest__input--checkbox" type="checkbox" name="beach" id="beach" checked>
-              <label class="contest__label contest__label--checkbox" for="beach">Обгорел на пляже</label>
+            <li class="contest__item checkbox">
+              <input class="checkbox__input" type="checkbox" name="beach" id="beach" checked>
+              <label class="checkbox__label" for="beach">Обгорел на пляже</label>
             </li>
-            <li class="contest__item">
-              <input class="contest__input contest__input--checkbox" type="checkbox" name="chuck" id="chuck">
-              <label class="contest__label contest__label--checkbox" for="chuck">Видел Чака Норриса</label>
+            <li class="contest__item checkbox checkbox">
+              <input class="checkbox__input" type="checkbox" name="chuck" id="chuck">
+              <label class="checkbox__label" for="chuck">Видел Чака Норриса</label>
             </li>
-            <li class="contest__item">
-              <input class="contest__input contest__input--checkbox" type="checkbox" name="souvenir" id="souvenir">
-              <label class="contest__label contest__label--checkbox" for="souvenir">Накупил сувениров</label>
+            <li class="contest__item checkbox">
+              <input class="checkbox__input" type="checkbox" name="souvenir" id="souvenir">
+              <label class="checkbox__label" for="souvenir">Накупил сувениров</label>
             </li>
-            <li class="contest__item">
-              <input class="contest__input contest__input--checkbox" type="checkbox" name="tower" id="tower" checked>
-              <label class="contest__label contest__label--checkbox" for="tower">Удержал башню</label>
+            <li class="contest__item checkbox">
+              <input class="checkbox__input" type="checkbox" name="tower" id="tower" checked>
+              <label class="checkbox__label" for="tower">Удержал башню</label>
             </li>
-            <li class="contest__item">
-              <input class="contest__input contest__input--checkbox" type="checkbox" name="hotel" id="hotel">
-              <label class="contest__label contest__label--checkbox" for="hotel">Разгромил отель</label>
+            <li class="contest__item checkbox">
+              <input class="checkbox__input" type="checkbox" name="hotel" id="hotel">
+              <label class="checkbox__label" for="hotel">Разгромил отель</label>
             </li>
           </ul>
       </fieldset>
       <fieldset class="contest__fieldset contest__fieldset--contacts">
         <legend class="contest__title visually-hidden">Ваши контакты</legend>
         <ul class="contest__list contest__list--contacts">
-          <li class="contest__item contest__item--contacts">
-            <label class="contest__label contest__label--contacts" for="tel">Номер телефона</label>
-            <input class="contest__input contest__input--contacts" type="tel" name="phone-number" id="phone-number" placeholder="Номер, пожалуйста">
+          <li class="contest__item checkbox">
+            <label class="checkbox__label" for="tel">Номер телефона</label>
+            <input class="checkbox__input" type="tel" name="phone-number" id="phone-number" placeholder="Номер, пожалуйста">
           </li>
-          <li class="contest__item contest__item--contacts">
-            <label class="contest__label contest__label--contacts" for="email">Адрес почты</label>
-            <input class="contest__input contest__input--contacts" type="email" name="email" id="email" placeholder="Введите почту *" required>
+          <li class="contest__item checkbox contest__item checkbox--contacts">
+            <label class="checkbox__label" for="email">Адрес почты</label>
+            <input class="checkbox__input" type="email" name="email" id="email" placeholder="Введите почту *" required>
           </li>
         </ul>
       </fieldset>
       <fieldset class="contest__fieldset contest__fieldset--app">
         <legend class="contest__title">С каким приложением путешествовали?</legend>
         <ul class="contest__list contest__list--app">
-          <li class="contest__item contest__item--app">
-            <input class="contest__input contest__input--radio" type="radio" name="trip-app" id="ios" value="ios" checked>
-            <label class="contest__label contest__label--radio"  for="ios">Pink для iOS</label>
+          <li class="contest__item checkbox">
+            <input class="checkbox__input" type="radio" name="trip-app" id="ios" value="ios" checked>
+            <label class="checkbox__label"  for="ios">Pink для iOS</label>
           </li>
-          <li class="contest__item contest__item--app">
-            <input class="contest__input contest__input--radio" type="radio" name="trip-app" id="Android" value="Android">
-            <label class="contest__label contest__label--radio"  for="Android">Pink на Android</label>
+          <li class="contest__item checkbox">
+            <input class="checkbox__input" type="radio" name="trip-app" id="Android" value="Android">
+            <label class="checkbox__label"  for="Android">Pink на Android</label>
           </li>
-          <li class="contest__item contest__item--app">
-            <input class="contest__input contest__input--radio" type="radio" name="trip-app" id="windows-phone" value="windows-phone">
-            <label class="contest__label contest__label--radio"  for="windows-phone">Windows Phone</label>
+          <li class="contest__item checkbox">
+            <input class="checkbox__input" type="radio" name="trip-app" id="windows-phone" value="windows-phone">
+            <label class="checkbox__label"  for="windows-phone">Windows Phone</label>
           </li>
         </ul>
       </fieldset>
