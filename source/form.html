@@ -56,7 +56,7 @@
               <input class="checkbox__input" type="checkbox" name="beach" id="beach" checked>
               <label class="checkbox__label" for="beach">Обгорел на пляже</label>
             </li>
-            <li class="contest__item checkbox checkbox">
+            <li class="contest__item checkbox">
               <input class="checkbox__input" type="checkbox" name="chuck" id="chuck">
               <label class="checkbox__label" for="chuck">Видел Чака Норриса</label>
             </li>
@@ -77,13 +77,13 @@
       <fieldset class="contest__fieldset contest__fieldset--contacts">
         <legend class="contest__title visually-hidden">Ваши контакты</legend>
         <ul class="contest__list contest__list--contacts">
-          <li class="contest__item checkbox">
-            <label class="checkbox__label" for="tel">Номер телефона</label>
-            <input class="checkbox__input" type="tel" name="phone-number" id="phone-number" placeholder="Номер, пожалуйста">
+          <li class="contest__item field">
+            <label class="field__label" for="tel">Номер телефона</label>
+            <input class="field__input" type="tel" name="phone-number" id="phone-number" placeholder="Номер, пожалуйста">
           </li>
-          <li class="contest__item checkbox contest__item checkbox--contacts">
-            <label class="checkbox__label" for="email">Адрес почты</label>
-            <input class="checkbox__input" type="email" name="email" id="email" placeholder="Введите почту *" required>
+          <li class="contest__item field  field--contacts">
+            <label class="field__label" for="email">Адрес почты</label>
+            <input class="field__input" type="email" name="email" id="email" placeholder="Введите почту *" required>
           </li>
         </ul>
       </fieldset>
@@ -92,15 +92,15 @@
         <ul class="contest__list contest__list--app">
           <li class="contest__item checkbox">
             <input class="checkbox__input" type="radio" name="trip-app" id="ios" value="ios" checked>
-            <label class="checkbox__label"  for="ios">Pink для iOS</label>
+            <label class="checkbox__label checkbox__label--radio"  for="ios">Pink для iOS</label>
           </li>
           <li class="contest__item checkbox">
             <input class="checkbox__input" type="radio" name="trip-app" id="Android" value="Android">
-            <label class="checkbox__label"  for="Android">Pink на Android</label>
+            <label class="checkbox__label checkbox__label--radio"  for="Android">Pink на Android</label>
           </li>
           <li class="contest__item checkbox">
             <input class="checkbox__input" type="radio" name="trip-app" id="windows-phone" value="windows-phone">
-            <label class="checkbox__label"  for="windows-phone">Windows Phone</label>
+            <label class="checkbox__label  checkbox__label--radio"  for="windows-phone">Windows Phone</label>
           </li>
         </ul>
       </fieldset>
