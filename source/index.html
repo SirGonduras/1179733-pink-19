@@ -85,40 +85,126 @@
     </section>
     <section class="price slider">
       <h2 class="visually-hidden">Стоимость подписки</h2>
-      <table class="price__list">
-        <thead class="price__head">
-          Стандарт 3,99 USD
+      <table class="price__list table-price">
+        <thead>
+          <tr>
+            <th class="table-price__header">
+            </th>
+            <th class="table-price__header">
+              <span class="table-price__license-type">База</span>
+              <span class="table-price__license-price">1,99 USD</span>
+            </th>
+            <th class="table-price__header table-price__header--hit">
+              <span class="table-price__license-type">Стандарт</span>
+              <span class="table-price__license-price">3,99 USD</span>
+            </th>
+            <th class="table-price__header">
+              <span class="table-price__license-type">Анлим</span>
+              <span class="table-price__license-price">9,99 USD</span>
+            </th>
+          </tr>
         </thead>
-        <tbody class="price__body">
+        <tbody>
           <tr>
-            <td class="price__field">Розовый фильтр</td>
+            <td class="table-price__cell">Розовый фильтр</td>
+            <td class="table-price__cell">
+              <div class="table-price__feature">
+                <span class="table-price__feature-value table-price__feature-value--true">
+                  <span class="visually-hidden">Да</span>
+                </span>
+              </div>
+            </td>
+            <td class="table-price__cell">
+              <div class="table-price__feature">
+                <span class="table-price__feature-value table-price__feature-value--true">
+                  <span class="visually-hidden">Да</span>
+                </span>
+              </div>
+            </td>
+            <td class="table-price__cell">
+              <div class="table-price__feature">
+                <span class="table-price__feature-value table-price__feature-value--true">
+                  <span class="visually-hidden">Да</span>
+                </span>
+              </div>
+            </td>
           </tr>
+
           <tr>
-            <td class="price__field">Смайлики</td>
+            <td class="table-price__cell">Смайлики</td>
+            <td class="table-price__cell">
+              <div class="table-price__feature" data-feature-name="Смайлики">
+                <span class="table-price__feature-value table-price__feature-value--false">
+                  <span class="visually-hidden">Нет</span>
+                </span>
+              </div>
+            </td>
+            <td class="table-price__cell">
+              <div class="table-price__feature" data-feature-name="Смайлики">
+                <span class="table-price__feature-value table-price__feature-value--true">
+                  <span class="visually-hidden">Да</span>
+                </span>
+              </div>
+            </td>
+            <td class="table-price__cell">
+              <div class="table-price__feature" data-feature-name="Смайлики">
+                <span class="table-price__feature-value table-price__feature-value--true">
+                  <span class="visually-hidden">Да</span>
+                </span>
+              </div>
+
+            </td>
           </tr>
+
           <tr>
-            <td class="price__field">Комментарии</td>
+            <td class="table-price__cell">Комментарии</td>
+            <td class="table-price__cell">
+              <div class="table-price__feature" data-feature-name="Комментарии">
+                <span class="table-price__feature-value table-price__feature-value--false">
+                  <span class="visually-hidden">Нет</span>
+                </span>
+              </div>
+            </td>
+            <td class="table-price__cell">
+              <div class="table-price__feature" data-feature-name="Комментарии">
+                <span class="table-price__feature-value table-price__feature-value--false">
+                  <span class="visually-hidden">Нет</span>
+                </span>
+              </div>
+            </td>
+            <td class="table-price__cell">
+              <div class="table-price__feature" data-feature-name="Комментарии">
+                <span class="table-price__feature-value table-price__feature-value--true">
+                  <span class="visually-hidden">Да</span>
+                </span>
+              </div>
+            </td>
           </tr>
         </tbody>
       </table>
-      <div class="slider__controls">
-        <input type="radio">
-        <input type="radio" checked>
-        <input type="radio">
+      <div class="price__slider-controls slider-controls">
+        <button class="slider-controls__button" type="button">
+        </button>
+        <button class="slider-controls__button slider-controls__button--current" type="button">
+        </button>
+        <button class="slider-controls__button" type="button">
+        </button>
       </div>
     </section>
     <address class="contacts">
       <h2 class="visually-hidden">Наши контакты</h2>
-        <p class="contacts__header">Остались вопросы? Свяжитесь с нами!</p>
-        <p class="contacts__title">Звоните:</p>
-        <a href="tel:+78125556666" class="contacts__data">+7 (812) 555-66-66</a>
-        <p class="contacts__title">Пишите:</p>
-        <a class="contacts__data" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-        <p class="contacts__title">Приезжайте в гости:</p>
-        <a class="contacts__data" href="https://yandex.ru/maps/2/saint-petersburg/house/bolshaya_konyushennaya_ulitsa_19_8/Z0kYdQVjSEQPQFtjfXVyeXpgYQ==/?ll=30.322432%2C59.938221&z=17">ул. Большая Конюшенная, 19/8</a>
-        <div class="contacts__map">
-          <img src="https://via.placeholder.com/320x140" alt="Карта проезда">
-        </div>
+      <p class="contacts__header">Остались вопросы? Свяжитесь с нами!</p>
+      <p class="contacts__title">Звоните:</p>
+      <a href="tel:+78125556666" class="contacts__data">+7 (812) 555-66-66</a>
+      <p class="contacts__title">Пишите:</p>
+      <a class="contacts__data" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+      <p class="contacts__title">Приезжайте в гости:</p>
+      <a class="contacts__data"
+        href="https://yandex.ru/maps/2/saint-petersburg/house/bolshaya_konyushennaya_ulitsa_19_8/Z0kYdQVjSEQPQFtjfXVyeXpgYQ==/?ll=30.322432%2C59.938221&z=17">ул.
+        Большая Конюшенная, 19/8</a>
+      <div class="contacts__map">
+        <img src="https://via.placeholder.com/320x140" alt="Карта проезда">
+      </div>
     </address>
   </main>
 
