@@ -27,4 +27,14 @@
   text-align: center;
   border-bottom: 1px solid rgb(48, 47, 47);
   border-top: 1px solid #485461;
+
+  &:hover,
+  &:focus {
+    color: #d22856;
+  }
+
+  &:active {
+    color: $header-item-color;
+    opacity: 0.3;
+  }
 }
