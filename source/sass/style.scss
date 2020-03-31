@@ -1,8 +1,5 @@
-@font-face {
-  font-family: "opensans";
-  src: url("../fonts/opensans.woff2") format("woff2"), url ("../fonts/opensans.woff") format("woff");
-}
 
+@import "fonts.scss";
 @import "colors.scss";
 @import "global.scss";
 @import "mixin.scss";
