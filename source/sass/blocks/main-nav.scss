@@ -15,7 +15,7 @@
   right: 0;
 }
 
-.main-nav__item a {
+.main-nav__item {
   color: $header-item-color;
   display: block;
   font-size: 18px;
@@ -37,4 +37,9 @@
     color: $header-item-color;
     opacity: 0.3;
   }
+
+  &--active {
+    text-decoration: underline;
+  }
+  // временно
 }
