@@ -1,16 +1,30 @@
 @font-face {
   font-family: "opensans";
-  src: url("../fonts/opensans.woff2") format("woff2"),
-       url("../fonts/opensans.woff") format("woff");
+  src: url("../fonts/opensans.woff2") format("woff2"), url ("../fonts/opensans.woff") format("woff");
 }
-body { margin: 0;
+
+body {
+  margin: 0;
   font-family: "opensans", "Arial", sans-serif;
 }
-img { max-width: 100% }
-a { text-decoration: none }
 
-html { box-sizing: border-box; }
-*, *::before, *::after { box-sizing: inherit; }
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
 
 @import "colors.scss";
 @import "blocks/main-nav.scss";
