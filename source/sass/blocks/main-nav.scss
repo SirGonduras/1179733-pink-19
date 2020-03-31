@@ -1,13 +1,12 @@
 .main-nav {
   color: $header-color;
   background-color: $header-bgr-color;
-  display: flex;
-  flex-direction: column;
   position: relative;
 }
 
 .main-nav__list {
   list-style: none;
+  padding: 0;
 }
 
 .main-nav__toggle {
@@ -15,9 +14,9 @@
   right: 0;
 }
 
-.main-nav__item {
+.main-nav__item a {
+  color: $header-item-color;
   display: block;
-  text-transform: uppercase;
   font-size: 18px;
   font-weight: bold;
   font-stretch: normal;
@@ -25,8 +24,6 @@
   line-height: 1.78;
   letter-spacing: normal;
   text-align: center;
-}
-
-.main-nav__item a {
-  color: $header-item-color;
+  border-bottom: 1px solid rgb(48, 47, 47);
+  border-top: 1px solid #485461;
 }
