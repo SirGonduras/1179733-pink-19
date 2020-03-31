@@ -1,5 +1,6 @@
 .features {
-  padding: 46px 34px 0 34px;
+  padding: 0;
+
 }
 
 .features__title {
@@ -17,4 +18,26 @@
   letter-spacing: normal;
   text-align: center;
   color: #283645;
+  background-color:#f2f2f2;
+  padding: 0;
+  width: 100%;
+  position: relative;
+}
+
+.features__list::before {
+  height: 450px;
+  background-color: #f2f2f2;
+  transform: rotate(-5deg);
+  top: -15px;
+
+  content: "";
+  display: block;
+  width: 110vw;
+  position: absolute;
+  left: calc(-50vw + 50%);
+  z-index: -1;
+}
+
+.features__item {
+  padding: 0 34px;
 }
