@@ -1,0 +1,22 @@
+.download{display: flex;
+  flex-direction: column;
+  background-color: #1d2631;
+  color: white;
+  padding: 20px 45px;
+}
+.download__btn {
+  display: block;
+  border: solid 3px white;
+}
+.download__list{
+  color: inherit;
+  list-style: none;
+  display: flex;
+
+}
+.download__item{
+  color: inherit;
+}
+.download__link{
+  color: inherit;
+}

@@ -1,0 +1,16 @@
+.promo{
+  display: flex;
+  flex-direction: column;
+  background-image: url(..\img\bg-back-mobile@1x.jpg) ;
+  background-color: #283645;
+}
+.promo__title{
+  font-size: 24px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: white;
+}

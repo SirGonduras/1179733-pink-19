@@ -1,0 +1,25 @@
+@font-face {
+  font-family: "opensans";
+  src: url("../fonts/opensans.woff2") format("woff2"),
+       url("../fonts/opensans.woff") format("woff");
+}
+body { margin: 0;
+  font-family: "opensans", "Arial", sans-serif;
+}
+img { max-width: 100% }
+a { text-decoration: none }
+
+// .feedback { color: black }
+// .feedback ul { list-style: none }
+// .feedback p { margin-bottom: 0 }
+
+html { box-sizing: border-box; }
+*, *::before, *::after { box-sizing: inherit; }
+
+@import "colors.scss";
+@import "blocks/main-nav.scss";
+@import "visually-hidden.scss";
+@import "blocks/promo.scss";
+@import "blocks/download.scss";
+@import "blocks/features.scss";
+@import "blocks/user-gallery.scss";
