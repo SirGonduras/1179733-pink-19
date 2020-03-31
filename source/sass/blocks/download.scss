@@ -9,9 +9,18 @@
 .download__list {
   list-style: none;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 0;
   height: 100%;
   align-items: center;
 }
 
+.download__availables {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.71;
+  letter-spacing: normal;
+}
