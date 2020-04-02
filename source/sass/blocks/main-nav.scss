@@ -34,8 +34,7 @@
   }
 
   &:active {
-    color: $header-item-color;
-    opacity: 0.3;
+    color: rgba($header-item-color, 0.3);
   }
 
   &--active {
