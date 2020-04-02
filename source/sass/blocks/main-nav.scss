@@ -15,6 +15,19 @@
   right: 0;
 }
 
+.main-nav__item a {
+  color: $header-item-color;
+
+  &:hover,
+  &:focus {
+    color: #d22856;
+  }
+
+  &:active {
+    color: rgba($header-item-color, 0.3);
+  }
+}
+
 .main-nav__item {
   color: $header-item-color;
   display: block;
@@ -27,18 +40,4 @@
   text-align: center;
   border-bottom: 1px solid rgb(48, 47, 47);
   border-top: 1px solid #485461;
-
-  &:hover,
-  &:focus {
-    color: #d22856;
-  }
-
-  &:active {
-    color: rgba($header-item-color, 0.3);
-  }
-
-  &--active {
-    text-decoration: underline;
-  }
-  // временно
 }
