@@ -1,5 +1,6 @@
 .features {
   padding: 0;
+  color: $darkfont;
 }
 
 .features__title {
@@ -7,7 +8,6 @@
   font-size: 24px;
   font-weight: 300;
   text-align: center;
-  color: #283645;
 }
 
 .features__list {
@@ -15,25 +15,10 @@
   font-size: 14px;
   line-height: 24px;
   text-align: center;
-  color: #283645;
-  background-color: #f2f2f2;
+  background-color: $gray-bgr;
   padding: 0;
   width: 100%;
   position: relative;
-}
-
-.features__list::before {
-  height: 450px;
-  background-color: #f2f2f2;
-  transform: rotate(-5deg);
-  top: -15px;
-
-  content: "";
-  display: block;
-  width: 110vw;
-  position: absolute;
-  left: calc(-50vw + 50%);
-  z-index: -1;
 }
 
 .features__item {

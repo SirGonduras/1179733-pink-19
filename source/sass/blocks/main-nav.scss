@@ -1,11 +1,11 @@
 .main-nav {
-  color: $header-color;
-  background-color: $header-bgr-color;
+  color: $ligth-font;
+  background-color: $dark-bgr;
   position: relative;
 }
 
 .main-nav__top-wrapper {
-  background-color: black;
+  background-color: $wrapper-bg;
   opacity: 0.5;
 }
 
@@ -21,15 +21,15 @@
 }
 
 .main-nav__item a {
-  color: $header-item-color;
+  color: $ligth-font;
 
   &:hover,
   &:focus {
-    color: #d22856;
+    color: $hover-item;
   }
 
   &:active {
-    color: rgba($header-item-color, 0.3);
+    color: rgba($ligth-font, 0.3);
   }
 }
 
@@ -40,6 +40,6 @@
   font-weight: bold;
   line-height: 32px;
   text-align: center;
-  border-bottom: 1px solid rgb(48, 47, 47);
-  border-top: 1px solid #485461;
+  border-bottom: 1px solid $brd-btm;
+  border-top: 1px solid $brd-top;
 }
