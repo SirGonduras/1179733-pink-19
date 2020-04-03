@@ -55,9 +55,8 @@
 .contest__prompt {
   text-transform: uppercase;
   line-height: 30px;
-
-  &::first-letter {
-    color: $red-base;
-  }
 }
-// не хочет краснеть(
+
+.contest__highlighting {
+  color: $red-base;
+}
