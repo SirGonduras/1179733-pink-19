@@ -1,6 +1,7 @@
 .features {
   padding: 0;
   color: $darkfont;
+  background: linear-gradient(-5deg, $gray-bgr 79%, $light-font 10%);
 }
 
 .features__title {
@@ -18,6 +19,7 @@
   padding: 0;
   width: 100%;
   position: relative;
+
 }
 
 .features__item {
