@@ -1,5 +1,5 @@
 .main-nav {
-  color: $ligth-font;
+  color: $light-font;
   background-color: $dark-bgr;
   position: relative;
 }
@@ -21,7 +21,7 @@
 }
 
 .main-nav__item a {
-  color: $ligth-font;
+  color: $light-font;
 
   &:hover,
   &:focus {
@@ -29,12 +29,12 @@
   }
 
   &:active {
-    color: rgba($ligth-font, 0.3);
+    color: rgba($light-font, 0.3);
   }
 }
 
 .main-nav__item {
-  color: $ligth-font;
+  color: $light-font;
   display: block;
   font-size: 18px;
   font-weight: bold;
