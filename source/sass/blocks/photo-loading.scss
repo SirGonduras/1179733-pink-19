@@ -1,0 +1,24 @@
+.photo-loading {
+  padding: 18px;
+  text-align: center;
+}
+
+.photo-loading__title {
+  padding: 35px;
+}
+
+.photo-loading__tools {
+  background-color: $gray-bgr;
+}
+
+.photo-loading__button {
+  border: solid 3px $red-base;
+  padding: 20px;
+  color: $red-base;
+}
+
+.photo-loading__button--cancel {
+  border: solid 3px $darkfont;
+  color: $darkfont;
+  opacity: 0.1;
+}
