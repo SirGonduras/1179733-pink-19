@@ -1,0 +1,44 @@
+.main-nav {
+  color: $light-font;
+  background-color: $dark-bgr;
+  position: relative;
+}
+
+.main-nav__top-wrapper {
+  background-color: rgba($wrapper-bg, 0.5);
+}
+
+.main-nav__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.main-nav__toggle {
+  position: absolute;
+  right: 0;
+}
+
+.main-nav__item a {
+  color: $light-font;
+
+  &:hover,
+  &:focus {
+    color: $red-base;
+  }
+
+  &:active {
+    color: rgba($light-font, 0.3);
+  }
+}
+
+.main-nav__item {
+  color: $light-font;
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 32px;
+  text-align: center;
+  border-bottom: 1px solid $brd-btm;
+  border-top: 1px solid $brd-top;
+}

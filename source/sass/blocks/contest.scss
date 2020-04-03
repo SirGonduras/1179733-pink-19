@@ -1,0 +1,62 @@
+.contest {
+  padding: 0;
+  margin: 0;
+}
+
+.contest__name {
+  font-size: 24px;
+  font-weight: 300;
+  text-align: center;
+  color: $light-font;
+  background: $dark-bgr url("../img/bg-back-mobile@1x.jpg");
+  padding: 36px 46px;
+  margin-top: 0;
+}
+
+.contest__heading {
+  text-align: center;
+  padding: 25px;
+}
+
+.contest__fieldset {
+  border: none;
+  padding: 19px;
+}
+
+.contest__list {
+  list-style: none;
+}
+
+.contest__title {
+  text-align: center;
+  color: $red-base;
+  text-transform: uppercase;
+}
+
+
+.contest__textarea {
+  margin: 0 auto;
+  font-size: 18px;
+  line-height: 30px;
+  padding: 19px;
+}
+
+.contest__submit {
+  padding: 22px 45px;
+  color: $light-font;
+  background-color: $green-bgr;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 4px;
+  border: solid 2px $green-bgr;
+}
+
+.contest__prompt {
+  text-transform: uppercase;
+  line-height: 30px;
+}
+
+.contest__highlighting {
+  color: $red-base;
+}
