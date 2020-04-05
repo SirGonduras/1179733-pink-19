@@ -1,5 +1,6 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
+
 * Студент: [Станислав Кощиенко](https://up.htmlacademy.ru/adaptive/19/user/1179733).
 * Наставник: [Никита Сигов](https://htmlacademy.ru/profile/crazer).
 
