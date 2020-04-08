@@ -35,35 +35,35 @@
   <main class="page-form">
     <h1 class="visually-hidden">Форма конкурса</h1>
 
-    <p class="contest-intro">
+    <p class="page-form__contest-intro">
       Поделитесь своей историей и получите
       шанс выиграть ценный приз — 1000 миль
       на вашу бонусную карту!
     </p>
 
     <form class="contest-form" action="https://echo.htmlacademy.ru" method="post">
-      <fieldset class="contest-form__part-fullname site-fild">
+      <fieldset class="contest-form__part-fullname site-field">
         <h2 class="visually-hidden">Введите свои данные</h2>
 
         <ul class="contest-form__fullname-list site-list">
           <li class="contest-form__surname site-list__item">
-            <label class="contest-form__fullname-lable" for="surname">Фамилия:</label>
+            <label class="contest-form__fullname-label" for="surname">Фамилия:</label>
             <input class="contest-form__fullname-input" type="text" name="surname" id="surname" placeholder="Укажите фамилию *">
           </li>
 
           <li class="contest-form__name site-list__item">
-            <label class="contest-form__fullname-lable" for="name">Имя:</label>
+            <label class="contest-form__fullname-label" for="name">Имя:</label>
             <input class="contest-form__fullname-input" type="text" name="name" id="name" placeholder="Введите ваше имя *">
           </li>
 
           <li class="contest-form__patronymic site-list__item">
-            <label class="contest-form__fullname-lable" for="patronymic">Отчество:</label>
+            <label class="contest-form__fullname-label" for="patronymic">Отчество:</label>
             <input class="contest-form__fullname-input" type="text" name="patronymic" id="patronymic" placeholder="Ну и отчество тоже">
           </li>
         </ul>
       </fieldset>
 
-      <fieldset class="contest-form__part-achievements site-fild">
+      <fieldset class="contest-form__part-achievements site-field">
         <h2 class="contest-form__head">
           Ваши безбашенные
           достижения в путешествии
@@ -101,7 +101,7 @@
         </ul>
       </fieldset>
 
-      <fieldset class="contest-form__part-contacts site-fild">
+      <fieldset class="contest-form__part-contacts site-field">
         <ul class="contest-form__contacts-list site-list">
           <li class="site-list__item">
             <label class="contest-form__contacts-label" for="phone">Номер телефона</label>
@@ -115,29 +115,29 @@
         </ul>
       </fieldset>
 
-      <fieldset class="contest-form__part-apps site-fild">
+      <fieldset class="contest-form__part-apps site-field">
         <h2 class="contest-form__head">
           С каким приложением путешествовали?
         </h2>
         <ul class="contest-form__apps-list site-list">
           <li class="site-list__item">
             <input type="radio" id="ios" name="app" value="ios" checked>
-            <label class="contest-form__apps-label"for="ios">Pink для iOS</label>
+            <label class="contest-form__apps-label" for="ios">Pink для iOS</label>
           </li>
 
           <li class="site-list__item">
             <input type="radio" id="android" name="app" value="android">
-            <label class="contest-form__apps-label"for="android">Pink на Android</label>
+            <label class="contest-form__apps-label" for="android">Pink на Android</label>
           </li>
 
           <li class="site-list__item">
             <input type="radio" id="windows" name="app" value="windows">
-            <label class="contest-form__apps-label"for="windows">Windows Phone</label>
+            <label class="contest-form__apps-label" for="windows">Windows Phone</label>
           </li>
         </ul>
       </fieldset>
 
-      <fieldset class="contest-form__part-emotions site-fild">
+      <fieldset class="contest-form__part-emotions site-field">
         <h2 class="contest-form__head">
           Опишите свои эмоции
         </h2>
@@ -148,7 +148,7 @@
       <button class="contest-form__btn-submit site-button" type="submit">Отправить форму</button>
     </form>
 
-    <p class="attention-text"><span class="stie-pink">*</span> — обязательные поля</p>
+    <p class="page-form__attention-text"><span class="stie-pink">*</span> — обязательные поля</p>
   </main>
 
   <footer class="page-footer">
