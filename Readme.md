@@ -1,7 +1,9 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
-* Студент: [Артур Эльцер](https://up.htmlacademy.ru/adaptive/19/user/1223801).
-* Наставник: [Артур Трифонов](https://htmlacademy.ru/profile/wrgraff).
+
+* Студент: [Станислав Кощиенко](https://up.htmlacademy.ru/adaptive/19/user/1179733).
+* Наставник: [Никита Сигов](https://htmlacademy.ru/profile/crazer).
+
 ---
 
 **Обратите внимание, что папка с вашими исходными файлами — `source/`.**
@@ -23,7 +25,7 @@ _`.editorconfig`, `.gitattributes`, `.gitignore`, `.stylelintrc`, `.travis.yml`,
 
 #### 2. Создайте форк
 
-[Откройте мастер-репозиторий](https://github.com/htmlacademy-adaptive/1223801-pink-19) и нажмите кнопку «Fork» в правом верхнем углу. Репозиторий из Академии будет скопирован в ваш аккаунт.
+[Откройте мастер-репозиторий](https://github.com/htmlacademy-adaptive/1179733-pink-19) и нажмите кнопку «Fork» в правом верхнем углу. Репозиторий из Академии будет скопирован в ваш аккаунт.
 
 <img width="800" alt="" src="https://user-images.githubusercontent.com/10909/60808088-259e3a80-a190-11e9-98f7-3c0edd9740f5.jpg">
 
@@ -53,7 +55,7 @@ git clone SSH-адрес_вашего_форка
 
 Репозиторий создан для обучения на профессиональном онлайн‑курсе «[HTML и CSS, уровень 2](https://htmlacademy.ru/intensive/adaptive)» от [HTML Academy](https://htmlacademy.ru).
 
-[travis-image]: https://travis-ci.com/htmlacademy-adaptive/1223801-pink-19.svg?branch=master
-[travis-url]: https://travis-ci.com/htmlacademy-adaptive/1223801-pink-19
-[dependency-image]: https://david-dm.org/htmlacademy-adaptive/1223801-pink-19/dev-status.svg?style=flat-square
-[dependency-url]: https://david-dm.org/htmlacademy-adaptive/1223801-pink-19?type=dev
+[travis-image]: https://travis-ci.com/htmlacademy-adaptive/1179733-pink-19.svg?branch=master
+[travis-url]: https://travis-ci.com/htmlacademy-adaptive/1179733-pink-19
+[dependency-image]: https://david-dm.org/htmlacademy-adaptive/1179733-pink-19/dev-status.svg?style=flat-square
+[dependency-url]: https://david-dm.org/htmlacademy-adaptive/1179733-pink-19?type=dev
