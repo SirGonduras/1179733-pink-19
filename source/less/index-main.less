@@ -1,0 +1,147 @@
+@grey: #f2f2f2;
+@white: #ffffff;
+@dark: #1d2631;
+
+.reset() {
+  margin: 0;
+  padding: 0;
+}
+
+.set-size (@width, @height) {
+  width: @width;
+  min-height: @height;
+}
+
+.page-main .main-start {
+  .reset();
+  min-height: 733px;
+  background-color: @dark;
+}
+
+
+.main-start .main-start__intro {
+  .reset();
+  min-height: 462px;
+  background:
+    url(../img/iphone-hand-mobile@1x.png) no-repeat 50% 100%,
+    @dark url(../img/bg-back-mobile@1x.jpg) no-repeat 50% 50%;
+}
+
+.main-start__intro h2 {
+  .reset();
+  .set-size(225px, 48px);
+  margin: 0 auto;
+  padding-top: 95px;
+
+  font-size: 24px;
+  color: @white;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+.download-apps .download-apps__download {
+  margin-top: 28px;
+  padding: 18px 40px;
+
+  border: 3px solid @white;
+  border-radius: 30px;
+  background: transparent;
+
+  font-size: 18px;
+  color: @white;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.download-apps .download-apps__appsul {
+  .set-size (215px, 60px);
+  margin: 0 auto;
+  margin-top: 32px;
+}
+
+.download-apps .site-list__item {
+  display: inline;
+  margin-right: 35px;
+}
+
+.download-apps .site-list__item:last-child {
+  margin-right: 0;
+}
+
+.download-apps .download-apps__comment {
+  .set-size(233px, 37px);
+  margin: 0 auto;
+  margin-top: 30px;
+  padding-bottom: 35px;
+
+  font-size: 14px;
+  color: @white;
+  font-weight: 300;
+  line-height: 1.71;
+}
+
+.advantages .advantages__question-contaner {
+  background-color: @white;
+  min-height: 217px;
+}
+
+.advantages .advantages__question {
+  .reset();
+  margin: 0 auto;
+  padding-top: 46px;
+  width: 204px;
+
+  font-size: 24px;
+  color: #283645;
+  font-weight: 300;
+}
+
+.advantages .advantages__answer {
+  .reset();
+  margin: 0 auto;
+  padding-top: 46px;
+  padding-bottom: 35px;
+  width: 204px;
+
+  font-size: 24px;
+  color: #283645;
+  font-weight: 300;
+}
+
+.advantages__description .advantages__list {
+  padding-top: 55px;
+}
+
+.advantages__description .advantages__item {
+  margin-bottom: 40px;
+}
+
+.advantages__description .advantages__item:last-child {
+  margin-bottom: 0;
+}
+
+.advantages__description .advantages__head {
+  margin: 0 auto;
+  margin-bottom: 25px;
+  width: 252px;
+
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.71;
+}
+
+.advantages__description .advantages__text {
+  margin: 0 auto;
+  width: 261px;
+
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.71;
+}
+
+.advantages .advantages__phone {
+  margin-top: 45px;
+}
