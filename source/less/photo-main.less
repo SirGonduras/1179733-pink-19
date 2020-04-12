@@ -1,0 +1,168 @@
+@white: #ffffff;
+@grey: #f2f2f2;
+
+.reset() {
+  margin: 0;
+  padding: 0;
+}
+
+.set-size (@width, @height) {
+  width: @width;
+  min-height: @height;
+}
+
+.page-photo .photo-intro {
+  .reset();
+  margin: 0 auto;
+  padding-top: 55px;
+  .set-size(243px, 74px);
+
+  font-size: 14px;
+  color: #283645;
+  line-height: 2.14;
+}
+
+.page-photo .photo__panorama-container {
+  margin: 0 auto;
+  margin-top: 56px;
+  width: 320px;
+  height: 137px;
+
+  position: relative;
+}
+
+.page-photo .photo__panorama {
+  width: 100%;
+  height: 100%;
+}
+
+.photo__panorama-container .photo-title {
+  padding: 7px 20px;
+  width: 101px;
+
+  position: absolute;
+  left: 160px;
+  top: 0;
+
+  font-size: 12px;
+  color: @white;
+  text-transform: uppercase;
+  font-weight: bold;
+  line-height: 2;
+  background-color: #d22856;
+}
+
+.comments-list .site-list__item {
+  margin-bottom: 20px;
+}
+
+.comments-list .site-list__item:last-child {
+  margin-bottom: 0;
+}
+
+.comments-list .panorama-comment {
+  .reset();
+  .set-size(280px, 130px);
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 25px 13px 25px 17px;
+
+  line-height: 24px;
+  color: #283645;
+  text-align: left;
+  background-color: @grey;
+}
+
+.panorama-comment .panorama-comment__name {
+  .reset();
+  display: inline-block;
+
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.panorama-comment .panorama-comment__t-ago {
+  .reset();
+  display: inline-block;
+
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.panorama-comment .panorama-comment__text {
+  .reset();
+  margin-bottom: 16px;
+}
+
+.panorama-comment .panorama-comment__heart {
+  display: inline-block;
+}
+
+.panorama-comment .panorama-comment__likes {
+  .reset();
+  margin-left: 20px;
+  display: inline-block;
+
+  font-size: 12px;
+  color: #d22856;
+}
+
+.comments-list__item .photo__comments-container {
+  width: 280px;
+  height: 180px;
+  margin: 0 auto;
+}
+
+.photo__comments-container .comments-list__photo {
+  width: 100%;
+  height: 100%;
+}
+
+.comments-list__item .comments-list__container {
+  .reset();
+  .set-size(280px, 130px);
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 25px 13px 25px 17px;
+
+  line-height: 24px;
+  color: #283645;
+  text-align: left;
+  background-color: @grey;
+}
+
+.comments-list__container .comments-list__name {
+  .reset();
+  display: inline-block;
+
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.comments-list__container .comments-list__t-ago {
+  .reset();
+  display: inline-block;
+
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.comments-list__container .comments-list__text {
+  .reset();
+  margin-bottom: 16px;
+}
+
+.comments-list__container .comments-list__heart {
+  display: inline-block;
+}
+
+.comments-list__container .comments-list__likes {
+  .reset();
+  margin-left: 20px;
+  display: inline-block;
+
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #d22856;
+}
