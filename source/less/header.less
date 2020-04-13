@@ -1,4 +1,4 @@
-.page-header .page-header__logo {
+.page-header__logo {
   .reset();
   display: block;
   min-height: 69px;
@@ -10,7 +10,7 @@
   fill: @white;
 }
 
-.main-nav__list .site-list__item {
+.main-nav__item {
   padding-top: 15px;
   min-height: 63px;
   box-sizing: border-box;
@@ -18,14 +18,14 @@
   border-bottom: 1px solid #000000;
 }
 
-.site-list__item .site-link {
+.main-nav__item a {
   font-size: 18px;
   font-weight: bold;
   line-height: 32px;
   color: @white;
 }
 
-.page-header .main-start__intro {
+.index-start__intro {
   .reset();
   min-height: 462px;
   background:
@@ -33,29 +33,48 @@
     @dark url(../img/bg-back-mobile@1x.jpg) no-repeat 50% 50%;
 }
 
-.main-start__intro h2 {
+.index-start__intro h2 {
   .reset();
   .set-size(225px, 48px);
   margin: 0 auto;
-  padding-top: 95px;
-
-  font-size: 24px;
-  color: @white;
-}
-
-.page-header .photo-start__intro {
-  .reset();
-  min-height: 237px;
-  background: @dark url(../img/bg-back-mobile@1x.jpg) no-repeat 50% 0%;
-}
-
-.page-header h2 {
-  .reset();
-  .set-size(225px, 48px);
-  margin: 0 auto;
-  padding-top: 95px;
+  padding-top: 28px;
 
   font-size: 24px;
   color: @white;
   font-weight: 300;
 }
+
+.photo-start__intro {
+  .reset();
+  min-height: 237px;
+  background: @dark url(../img/bg-back-mobile@1x.jpg) no-repeat 50% 0%;
+}
+
+.photo-start__intro h2 {
+  .reset();
+  .set-size(225px, 48px);
+  margin: 0 auto;
+  padding-top: 36px;
+
+  font-size: 24px;
+  color: @white;
+  font-weight: 300;
+}
+
+.form-start__intro {
+  .reset();
+  min-height: 237px;
+  background: @dark url(../img/bg-back-mobile@1x.jpg) no-repeat 50% 0%;
+}
+
+.form-start__intro h2 {
+  .reset();
+  .set-size(228px, 48px);
+  margin: 0 auto;
+  padding-top: 36px;
+
+  font-size: 24px;
+  color: @white;
+  font-weight: 300;
+}
+
