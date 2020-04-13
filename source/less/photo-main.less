@@ -1,4 +1,4 @@
-.photo-intro {
+.page-photo__intro {
   .reset();
   margin: 0 auto;
   padding-top: 55px;
@@ -9,21 +9,36 @@
   line-height: 2.14;
 }
 
-.photo__panorama-container {
+
+.post-list__item {
+  margin-bottom: 20px;
+}
+
+.post-list__item:last-child {
+  margin-bottom: 0;
+}
+
+.post-list__photo-container {
   margin: 0 auto;
-  margin-top: 56px;
-  width: 320px;
-  height: 137px;
+  width: 280px;
+  height: 180px;
 
-  position: relative;
+  &--panorama {
+    margin: 0 auto;
+    margin-top: 56px;
+    width: 320px;
+    height: 137px;
+
+    position: relative;
+  }
 }
 
-.photo__panorama {
+.post-list__photo {
   width: 100%;
-  height: 100%;
+  height: auto;
 }
 
-.photo-title {
+.post-list__panorama-title {
   padding: 7px 20px;
   width: 101px;
 
@@ -39,15 +54,7 @@
   background-color: #d22856;
 }
 
-.comments-list li {
-  margin-bottom: 20px;
-}
-
-.comments-list li:last-child {
-  margin-bottom: 0;
-}
-
-.panorama-comment {
+.post-list__comment {
   .reset();
   .set-size(280px, 130px);
   box-sizing: border-box;
@@ -60,7 +67,7 @@
   background-color: @grey;
 }
 
-.panorama-comment__name {
+.post-list__comment-name {
   .reset();
   display: inline-block;
 
@@ -68,7 +75,7 @@
   font-weight: bold;
 }
 
-.panorama-comment__t-ago {
+.post-list__t-ago {
   .reset();
   display: inline-block;
 
@@ -76,80 +83,20 @@
   font-weight: 300;
 }
 
-.panorama-comment__text {
+.post-list__text {
   .reset();
   margin-bottom: 16px;
 }
 
-.panorama-comment__heart {
+.post-list__heart {
   display: inline-block;
 }
 
-.panorama-comment__likes {
+.post-list__likes {
   .reset();
   margin-left: 20px;
   display: inline-block;
 
   font-size: 12px;
-  color: #d22856;
-}
-
-.photo__comments-container {
-  width: 280px;
-  height: 180px;
-  margin: 0 auto;
-}
-
-.comments-list__photo {
-  width: 100%;
-  height: auto;
-}
-
-.comments-list__container {
-  .reset();
-  .set-size(280px, 130px);
-  box-sizing: border-box;
-  margin: 0 auto;
-  padding: 25px 13px 25px 17px;
-
-  line-height: 24px;
-  color: #283645;
-  text-align: left;
-  background-color: @grey;
-}
-
-.comments-list__name {
-  .reset();
-  display: inline-block;
-
-  font-size: 14px;
-  font-weight: bold;
-}
-
-.comments-list__t-ago {
-  .reset();
-  display: inline-block;
-
-  text-transform: uppercase;
-  font-size: 14px;
-  font-weight: 300;
-}
-
-.comments-list__text {
-  .reset();
-  margin-bottom: 16px;
-}
-
-.comments-list__heart {
-  display: inline-block;
-}
-
-.comments-list__likes {
-  .reset();
-  margin-left: 20px;
-  display: inline-block;
-
-  font-size: 12px;
-  text-transform: uppercase;
   color: #d22856;
 }
