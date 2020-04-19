@@ -1,4 +1,30 @@
 .main-start {
   .reset();
+  margin: 0 auto;
+  width: @mobile-width;
   background-color: @dark;
 }
+
+.main-start__index-intro {
+  .reset();
+  margin: 0 auto;
+  padding-top: 19px;
+  min-height: 396px;
+  box-sizing: border-box;
+
+  background:
+    url("../img/iphone-hand-mobile@1x.png") no-repeat 0% 100%,
+    @dark url("../img/bg-back-mobile@1x.jpg") no-repeat 50% 50%;
+}
+
+.main-start__index-tagline {
+  .reset();
+  .set-size(225px, 48px);
+  margin: 0 auto;
+
+  font-size: 24px;
+  color: @white;
+  font-weight: 300;
+  letter-spacing: normal;
+}
+

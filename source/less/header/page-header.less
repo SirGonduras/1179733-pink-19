@@ -1,11 +1,29 @@
+.page-header {
+  margin: 0 auto;
+  width: 320px;
+
+  display: flex;
+  flex-direction: column;
+}
+
 .page-header__logo {
   .reset();
-  display: block;
+  padding: 20px;
   min-height: 69px;
+
+  display: block;
+  box-sizing: border-box;
+  text-align: left;
   background-color: @dark-blue;
   border-bottom: 1px solid #000000;
 }
 
 .page-header__logo-image {
   fill: @white;
+}
+
+@media (min-width: @tablet-width) {
+  .page-header {
+    width: auto;
+  }
 }
