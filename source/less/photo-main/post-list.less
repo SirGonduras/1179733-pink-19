@@ -1,0 +1,90 @@
+.post-list__item {
+  margin-bottom: 20px;
+}
+
+.post-list__item:last-child {
+  margin-bottom: 0;
+}
+
+.post-list__photo-container {
+  margin: 0 auto;
+  width: 280px;
+  height: 180px;
+
+  &--panorama {
+    margin: 0 auto;
+    margin-top: 56px;
+    width: 320px;
+    height: 137px;
+
+    position: relative;
+  }
+}
+
+.post-list__photo {
+  width: 100%;
+  height: auto;
+}
+
+.post-list__panorama-title {
+  padding: 7px 20px;
+  width: 101px;
+
+  position: absolute;
+  left: 160px;
+  top: 0;
+
+  font-size: 12px;
+  color: @white;
+  text-transform: uppercase;
+  font-weight: bold;
+  line-height: 2;
+  background-color: #d22856;
+}
+
+.post-list__comment {
+  .reset();
+  .set-size(280px, 130px);
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 25px 13px 25px 17px;
+
+  line-height: 24px;
+  color: #283645;
+  text-align: left;
+  background-color: @grey;
+}
+
+.post-list__comment-name {
+  .reset();
+  display: inline-block;
+
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.post-list__t-ago {
+  .reset();
+  display: inline-block;
+
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.post-list__text {
+  .reset();
+  margin-bottom: 16px;
+}
+
+.post-list__heart {
+  display: inline-block;
+}
+
+.post-list__likes {
+  .reset();
+  margin-left: 20px;
+  display: inline-block;
+
+  font-size: 12px;
+  color: #d22856;
+}
