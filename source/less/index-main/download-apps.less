@@ -1,6 +1,11 @@
+.download-apps {
+  margin: 0 auto;
+  width: 320px;
+}
+
 .download-apps__download {
-  margin-top: 28px;
-  padding: 18px 40px;
+  padding: 17px 36px;
+  margin-bottom: 29px;
 
   border: 3px solid @white;
   border-radius: 30px;
@@ -9,13 +14,13 @@
   font-size: 18px;
   color: @white;
   font-weight: bold;
-  line-height: 1;
+  line-height: 18px;
 }
 
 .download-apps__list {
   .set-size (215px, 60px);
   margin: 0 auto;
-  margin-top: 32px;
+  margin-bottom: 19px;
 }
 
 .download-apps__item {
@@ -28,13 +33,34 @@
 }
 
 .download-apps__comment {
-  .set-size(233px, 37px);
+  width: 233px;
   margin: 0 auto;
-  margin-top: 30px;
-  padding-bottom: 35px;
+  padding-bottom: 31px;
 
   font-size: 14px;
   color: @white;
   font-weight: 300;
   line-height: 1.71;
+}
+
+@media (min-width: @tablet-width) {
+  .download-apps {
+    margin: none;
+    margin-left: 2%;
+  }
+
+  .download-apps__download {
+    padding: 17px 45px;
+    margin-bottom: 42px;
+  }
+
+  .download-apps__list  {
+    margin-bottom: 28px;
+  }
+
+  .download-apps__comment {
+    padding-bottom: 102px;
+    width: 295px;
+    font-size: 18px;
+  }
 }
