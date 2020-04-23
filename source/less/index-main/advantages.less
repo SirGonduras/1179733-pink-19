@@ -1,36 +1,38 @@
-.advantages__description {
-  background-color: @grey;
+.advantages {
+  padding-top: 40px;
 }
 
 .advantages__question {
   .reset();
   margin: 0 auto;
-  padding-top: 46px;
+  margin-bottom: 28px;
   width: 204px;
 
   font-size: 24px;
   color: #283645;
   font-weight: 300;
+  line-height: 30px;
 }
 
 .advantages__answer {
   .reset();
   margin: 0 auto;
-  padding-top: 46px;
-  padding-bottom: 35px;
+  margin-bottom: 108px;
   width: 204px;
 
   font-size: 24px;
   color: #283645;
   font-weight: 300;
+  line-height: 30px;
 }
 
-.advantages__list {
-  padding-top: 55px;
+.advantages__container-center {
+  padding-bottom: 318px;
+  background:@grey url("../../img/iphone-screen-mobile@1x.png") no-repeat 50% 111%;
 }
 
 .advantages__item {
-  margin-bottom: 40px;
+  margin-bottom: 27px;
 }
 
 .advantages__item:last-child {
@@ -39,7 +41,7 @@
 
 .advantages__head {
   margin: 0 auto;
-  margin-bottom: 25px;
+  margin-bottom: 10px;
   width: 252px;
 
   font-size: 18px;
@@ -53,7 +55,7 @@
 
   font-size: 14px;
   font-weight: normal;
-  line-height: 1.71;
+  line-height: 24px;
 }
 
 .advantages__phone {
@@ -61,5 +63,54 @@
 }
 
 @media (min-width: @tablet-width) {
+  .advantages {
+    padding-top: 58px;
+  }
+
+  .advantages__question {
+    margin-bottom: 11px;
+    width: 588px;
+    font-size: 40px;
+  }
+
+  .advantages__answer {
+    margin-bottom: 53px;
+    width: 578px;
+    font-size: 40px;
+    line-height: 46px;
+  }
+
+  .advantages__description {
+    padding-bottom: 41px;
+  }
+
+  .advantages__container-center {
+    padding-top: 67px;
+    margin: 0 auto;
+    padding-bottom: 43px;
+    width: 620px;
+    background: @grey url("../../img/iphone-screen-3-tablet@1x.png") no-repeat 0% 100%;
+  }
+
+  .advantages__list {
+    width: 310px;
+    margin-left: 309px;
+    text-align: left;
+  }
+
+  .advantages__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  .advantages__head {
+    .reset();
+    margin-bottom: 10px;
+  }
+
+  .advantages__text {
+    .reset();
+    width: auto;
+    line-height: 24px;
+  }
 
 }
