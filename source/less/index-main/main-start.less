@@ -1,35 +1,42 @@
 .main-start {
   .reset();
   margin: 0 auto;
-  padding-top: 19px;
-  width: @mobile-width;
-  background-color: @dark;
+  padding-top: 20px;
 
-  background:
-    url("../../img/iphone-hand-mobile@1x.png") no-repeat 0% 29%,
-   #1d2631 url("../img/bg-back-mobile@1x.jpg") no-repeat 50% -32%;
+  background: @dark url("../img/bg-back-mobile@1x.jpg") no-repeat 50% -32%;
+}
+
+.main-start__wrapper {
+  margin: 0 auto;
+  width: 320px;
+
+  background: url("../../img/iphone-hand-mobile@1x.png") no-repeat 0% 25.3%;
 }
 
 .main-start__index-tagline {
   .reset();
   width: 225px;
   margin: 0 auto;
-  margin-bottom: 337px;
+  margin-bottom: 341px;
 
   font-size: 24px;
   color: @white;
   font-weight: 300;
+  line-height: 31px;
   letter-spacing: normal;
 }
 
 @media (min-width: @tablet-width) {
   .main-start {
-    padding-top: 92px;
-    width: auto;
+    padding-top: 75px;
+    background: url(../../img/bg-back-tablet@1x.jpg) no-repeat 50% 50%;
+  }
 
-    background:
-      url(../../img/iphone-hand-tablet@1x.png) no-repeat 50% 100%,
-    #1d2631 url(../../img/bg-back-tablet@1x.jpg) no-repeat 50% 50%;
+  .main-start__wrapper {
+    padding-top: 17px;
+    padding-bottom: 2px;
+    width: 620px;
+    background: url("../../img/iphone-hand-tablet@1x.png") no-repeat 47% 0%;
   }
 
   .main-start__index-tagline {
