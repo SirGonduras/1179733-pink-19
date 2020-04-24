@@ -49,16 +49,12 @@
     text-align: left;
   }
 
-  .main-start__index-tagline {
-    margin-bottom: 26px;
-  }
-
   .download-apps__download {
     padding: 17px 45px;
     margin-bottom: 44px;
   }
 
-  .download-apps__list  {
+  .download-apps__list {
     margin-bottom: 32px;
     width: 228px;
   }
@@ -66,11 +62,27 @@
   .download-apps__comment {
     margin: 0;
     margin-left: 3px;
-    padding-bottom: 109px;
+    padding-bottom: 108px;
     width: 295px;
 
     font-size: 18px;
     text-align: center;
     line-height: 25px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .download-apps__download {
+    margin-bottom: 64px;
+    padding: 16px 29px;
+    font-size: 21px;
+  }
+
+  .download-apps__list {
+    margin-bottom: 53px;
+  }
+
+  .download-apps__comment {
+    padding-bottom: 120px;
   }
 }
