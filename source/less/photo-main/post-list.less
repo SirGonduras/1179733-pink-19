@@ -10,14 +10,6 @@
   margin: 0 auto;
   width: 280px;
   height: 180px;
-
-  &--panorama {
-    margin: 0 auto;
-    width: 320px;
-    height: 137px;
-
-    position: relative;
-  }
 }
 
 .post-list__photo {
@@ -25,28 +17,14 @@
   height: auto;
 }
 
-.post-list__panorama-title {
-  padding: 7px 20px;
-  width: 101px;
-
-  position: absolute;
-  left: 160px;
-  top: 0;
-
-  font-size: 12px;
-  color: @white;
-  text-transform: uppercase;
-  font-weight: bold;
-  line-height: 2;
-  background-color: #d22856;
-}
-
 .post-list__comment {
   .reset();
-  .set-size(280px, 130px);
+  width: 283px;
   box-sizing: border-box;
   margin: 0 auto;
-  padding: 25px 13px 25px 17px;
+  padding-top: 19px;
+  padding-bottom: 20.3px;
+  padding-left: 19px;
 
   line-height: 24px;
   color: #283645;
@@ -68,22 +46,109 @@
 
   text-transform: uppercase;
   font-weight: 300;
+  letter-spacing: -1px;
 }
 
 .post-list__text {
   .reset();
-  margin-bottom: 16px;
+  margin-bottom: 9px;
 }
 
 .post-list__heart {
   display: inline-block;
+  margin-right: 15px;
+  fill: #d22856;
 }
 
 .post-list__likes {
   .reset();
-  margin-left: 20px;
   display: inline-block;
 
   font-size: 12px;
   color: #d22856;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+@media (min-width: @tablet-width) {
+  .post-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .post-list__item {
+    width: 300px;
+  }
+
+  .post-list__photo-container {
+    width: 300px;
+    height: 300px;
+  }
+
+  .post-list__comment {
+    position: relative;
+    padding-top: 25px;
+    padding-bottom: 28px;
+    padding-left: 27px;
+    padding-right: 27px;
+    .set-size(300px, 155px);
+  }
+
+  .post-list__heart {
+    position: absolute;
+    right: 17px;
+    top: 113px;
+  }
+
+  .post-list__likes {
+    position: absolute;
+    left: 27.5px;
+    top: 111px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .post-list__item {
+    .reset();
+    width: 300px;
+  }
+
+  .post-list__item:nth-child(3n) {
+    margin-bottom: 54px;
+  }
+
+  .post-list__item:last-child {
+    margin-bottom: 0;
+  }
+
+  .post-list__photo-container {
+    width: 300px;
+    height: 400px;
+  }
+
+  .post-list__comment {
+    padding-bottom: 0;
+  }
+
+  .post-list__heart {
+    right: 17px;
+    top: 113px;
+
+    &--panorama {
+      right: 16.5px;
+      top: 22px;
+    }
+  }
+
+  .post-list__likes {
+    position: absolute;
+    left: 27.5px;
+    top: 111px;
+
+    &--panorama {
+      left: 788.8px;
+      top: 19px;
+    }
+  }
 }
