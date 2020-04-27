@@ -35,6 +35,14 @@
 }
 
 @media (min-width: @desktop-width) {
+  .page-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
   .page-header__header-wrapper {
     margin: 0 auto;
     width: 940px;
@@ -42,12 +50,18 @@
   }
 
   .page-header__logo-wrapper {
-    margin: 0;
+    .reset();
     width: auto;
   }
 
   .page-header__logo {
-    margin-right: 244px;
+    .reset();
+    margin-right: 172px;
+    padding-top: 33px;
+    padding-bottom: 77px;
+    width: 147px;
+    height: 40px;
+
     border: none;
   }
 }
