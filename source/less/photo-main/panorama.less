@@ -40,6 +40,9 @@
   padding-right: 12px;
   padding-bottom: 21px;
 
+  display: flex;
+  flex-wrap: wrap;
+
   line-height: 24px;
   color: #283645;
   text-align: left;
@@ -49,7 +52,6 @@
 
 .panorama__comment-name {
   .reset();
-  display: inline-block;
 
   font-size: 14px;
   font-weight: bold;
@@ -57,7 +59,6 @@
 
 .panorama__t-ago {
   .reset();
-  display: inline-block;
 
   text-transform: uppercase;
   font-weight: 300;
@@ -66,18 +67,18 @@
 
 .panorama__text {
   .reset();
-  margin-bottom: 9px;
+  margin-bottom: 15px;
 }
 
 .panorama__heart {
-  display: inline-block;
-  margin-right: 15px;
+  margin-right: 19px;
   fill: #d22856;
 }
 
 .panorama__likes {
   .reset();
-  display: inline-block;
+  margin-top: -3px;
+  min-width: 100px;
 
   font-size: 12px;
   color: #d22856;
@@ -100,23 +101,33 @@
   }
 
   .panorama__comment {
-    position: relative;
     padding-top: 25px;
     padding-left: 27px;
-    padding-bottom: 15px;
+    padding-bottom: 9px;
+    padding-right: 26px;
     width: 620px;
   }
 
-  .panorama__heart {
-    position: absolute;
-    right: 14px;
-    top: 30px;
+  .panorama__comment-name {
+    order: 0;
   }
 
   .panorama__likes {
-    position: absolute;
-    right: 59px;
-    top: 27px;
+    order: 1;
+    margin-left: auto;
+    margin-top: 2px;
+    margin-right: 6px;
+  }
+
+  .panorama__heart {
+    .reset();
+    margin-top: 5px;
+    margin-right: 3px;
+    order: 2;
+  }
+
+  .panorama__text {
+    order: 3;
   }
 }
 
@@ -135,16 +146,11 @@
   .panorama__comment {
     padding-top: 25px;
     padding-left: 27px;
-    padding-bottom: 15px;
+    padding-bottom: 8px;
     width: 940px;
   }
 
   .panorama__heart {
-    position: absolute;
-    right: 17px;
-  }
-
-  .panorama__likes {
-    right: 62px;
+    margin-right: 6px;
   }
 }
