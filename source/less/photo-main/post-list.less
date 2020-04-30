@@ -1,5 +1,5 @@
 .post-list__item {
-  margin-bottom: 20px;
+  margin-bottom: 20.4px;
 }
 
 .post-list__item:last-child {
@@ -23,8 +23,11 @@
   box-sizing: border-box;
   margin: 0 auto;
   padding-top: 19px;
-  padding-bottom: 20.3px;
+  padding-bottom: 21px;
   padding-left: 19px;
+
+  display: flex;
+  flex-wrap: wrap;
 
   line-height: 24px;
   color: #283645;
@@ -34,16 +37,12 @@
 
 .post-list__comment-name {
   .reset();
-  display: inline-block;
 
   font-size: 14px;
   font-weight: bold;
 }
 
 .post-list__t-ago {
-  .reset();
-  display: inline-block;
-
   text-transform: uppercase;
   font-weight: 300;
   letter-spacing: -1px;
@@ -51,18 +50,19 @@
 
 .post-list__text {
   .reset();
-  margin-bottom: 9px;
+  width: 100%;
+  margin-bottom: 15px;
 }
 
 .post-list__heart {
-  display: inline-block;
-  margin-right: 15px;
+  margin-right: 19px;
   fill: #d22856;
 }
 
 .post-list__likes {
   .reset();
-  display: inline-block;
+  margin-top: -3px;
+  min-width: 100px;
 
   font-size: 12px;
   color: #d22856;
@@ -79,6 +79,7 @@
 
   .post-list__item {
     width: 300px;
+    margin-bottom: 20.2px;
   }
 
   .post-list__photo-container {
@@ -87,24 +88,23 @@
   }
 
   .post-list__comment {
-    position: relative;
-    padding-top: 25px;
+    padding-top: 24px;
     padding-bottom: 28px;
     padding-left: 27px;
     padding-right: 27px;
     .set-size(300px, 155px);
   }
 
+  .post-list__comment-name {
+    margin-bottom: -12px;
+  }
+
   .post-list__heart {
-    position: absolute;
-    right: 17px;
-    top: 113px;
+
   }
 
   .post-list__likes {
-    position: absolute;
-    left: 27.5px;
-    top: 111px;
+
   }
 }
 
