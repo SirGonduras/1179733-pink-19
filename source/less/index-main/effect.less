@@ -1,0 +1,122 @@
+.effect {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .effect {
+    display: block;
+    background-color: @white;
+  }
+
+  .effect__wrapper {
+    position: relative;
+
+    margin: 0 auto;
+    padding-bottom: 33px;
+    width: 620px;
+  }
+
+  .effect__wrapper::before {
+    position: absolute;
+    content: "24";
+    left: 0;
+    top: 56px;
+
+    padding-top: 86px;
+    width: 238px;
+    height: 276px;
+    box-sizing: border-box;
+
+    font-size: 96px;
+    color: #d22856;
+    font-weight: bold;
+
+    background:
+      url("../img/icon-editor-diagram-fill.svg") no-repeat 50% 76%,
+      url("../img/icon-timer.svg") no-repeat 50% 50%;
+  }
+
+  .effect__container {
+    margin-left: 309px;
+    padding-top: 94px;
+    width: 300px;
+  }
+
+  .effect__head {
+    .reset();
+    margin-bottom: 10px;
+    width: 185px;
+
+    font-size: 30px;
+    color: #000000;
+    font-weight: bold;
+    line-height: 36px;
+
+    text-align: left;
+  }
+
+  .effect__text {
+    .reset();
+    margin-bottom: 12px;
+    width: 299px;
+    line-height: 24px;
+
+    text-align: left;
+  }
+
+  .effect__link {
+    display: block;
+    color: rgb(210, 40, 86);
+    text-decoration: underline;
+
+    text-align: left;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .effect {
+    background-color: @grey;
+  }
+
+  .effect__wrapper {
+    padding-bottom: 116px;
+    width: 879px;
+  }
+
+  .effect__wrapper::before {
+    left: -30px;
+    top: 32px;
+
+    padding-top: 109px;
+    width: 298px;
+    height: 345px;
+
+    font-size: 120px;
+
+    background:
+      url("../img/icon-editor-diagram-fill-desktop.svg") no-repeat 50% 76%,
+      url("../img/icon-timer-desktop.svg") no-repeat 50% 50%;
+  }
+
+  .effect__container {
+    margin-left: 336px;
+    padding-top: 125px;
+    width: 560px;
+  }
+
+  .effect__head {
+    width: auto;
+    margin-bottom: 23px;
+  }
+
+  .effect__text {
+    margin-bottom: 35px;
+    width: 523px;
+    font-size: 18px;
+    line-height: 29px;
+  }
+
+  .effect__link {
+    font-size: 18px;
+  }
+}

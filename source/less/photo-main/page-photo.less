@@ -1,10 +1,36 @@
 .page-photo__intro {
   .reset();
   margin: 0 auto;
-  padding-top: 55px;
-  .set-size(243px, 74px);
+  margin-bottom: 47px;
+  padding-top: 46px;
+  width: 243px;
 
   font-size: 14px;
   color: #283645;
-  line-height: 2.14;
+  line-height: 30px;
+}
+
+@media (min-width: @tablet-width) {
+  .page-photo__intro {
+    padding-top: 92px;
+    margin-bottom: 76px;
+    width: 440px;
+    font-size: 18px;
+  }
+
+  .page-photo__wrapper {
+    margin: 0 auto;
+    width: 620px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-photo__intro {
+    margin-bottom: 88px;
+    width: 574px;
+  }
+
+  .page-photo__wrapper {
+    width: 940px;
+  }
 }

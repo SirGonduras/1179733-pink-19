@@ -1,14 +1,43 @@
 .main-nav__item {
-  padding-top: 15px;
-  min-height: 63px;
+  padding-top: 16px;
+  padding-bottom: 14px;
   box-sizing: border-box;
-  background-color: @dark-blue;
   border-bottom: 1px solid #000000;
+  border-top: 1px solid #485461;
 }
 
 .main-nav__link {
   font-size: 18px;
+  color: @white;
   font-weight: bold;
   line-height: 32px;
-  color: @white;
+  text-transform: uppercase;
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav__item {
+    padding-top: 16px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav__list {
+    width: 620px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .main-nav__item {
+    .reset();
+    padding-top: 46px;
+    padding-bottom: 44px;
+    border: none;
+  }
+
+  .main-nav__link {
+    font-weight: normal;
+    line-height: 18px;
+    text-transform: none;
+  }
 }

@@ -1,16 +1,43 @@
 .photo-start {
   .reset();
-  min-height: 237px;
-  background: @dark url("../img/bg-back-mobile@1x.jpg") no-repeat 50% 0%;
+  background: @dark url("../img/bg-back-mobile@1x.jpg") no-repeat 50% 23%;
 }
 
 .photo-start__tagline {
   .reset();
-  .set-size(225px, 48px);
+  width: 225px;
   margin: 0 auto;
-  padding-top: 36px;
+  padding-top: 29px;
+  padding-bottom: 83px;
 
   font-size: 24px;
   color: @white;
   font-weight: 300;
+  line-height: 29px;
+}
+
+@media (min-width: @tablet-width) {
+  .photo-start {
+    background: @dark url("../img/bg-back-tablet@1x.jpg") no-repeat 50% 28%;
+  }
+
+  .photo-start__tagline {
+    padding-top: 72px;
+    padding-bottom: 140px;
+    width: 355px;
+
+    font-size: 50px;
+    line-height: 59px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .photo-start {
+    background: @dark url("../img/bg-back-desktop@1x.jpg") no-repeat 50% 0%;
+  }
+
+  .photo-start__tagline {
+    padding-top: 175px;
+    padding-bottom: 101px;
+  }
 }
