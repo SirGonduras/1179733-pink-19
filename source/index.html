@@ -128,14 +128,58 @@
     </section>
 
     <section class="reviews">
-      <h3 class="reviews_name">Николай Петров</h3>
+      <h3 class="reviews__name">Николай Петров</h3>
+      <p class="reviews__info">25 лет, водитель трамвая</p>
       <p class="reviews__text">
         «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
       </p>
 
+      <div class="reviews__switcher-container">
+        <input class="reviews__switcher" type="radio" name="offer" id="offer-radio-1" checked>
+        <input class="reviews__switcher" type="radio" name="offer" id="offer-radio-2" >
+        <input class="reviews__switcher" type="radio" name="offer" id="offer-radio-3">
+      </div>
       <!-- Элементы управления -->
     </section>
 
+
+    <section class="offer">
+      <div class="offer__wrapper">
+        <div class="offer__container">
+          <table class="offer__list">
+            <thead class="offer__list-head">
+              <tr>
+                <th class="offer__value offer__value--empty"></th>
+                <th class="offer__value">База<p class="offer__price">1,99 USD</p></th>
+                <th class="offer__value offer__value--flag">Стандарт<p class="offer__price">3,99 USD</p></th>
+                <th class="offer__value">Анлим<p class="offer__price">9,99 USD</p></th>
+              </tr>
+            </thead>
+            <tbody class="offer__list-body">
+              <tr>
+                <td class="offer__field offer__field--empty offer__field--fill">Розовый фильтр</td>
+                <td class="offer__field offer__field--ok">Розовый фильтр</td>
+                <td class="offer__field offer__field--ok">Розовый фильтр</td>
+                <td class="offer__field offer__field--ok">Розовый фильтр</td>
+              </tr>
+              <tr>
+                <td class="offer__field offer__field--empty offer__field--fill">Смайлики</td>
+                <td class="offer__field offer__field--cancel">Смайлики</td>
+                <td class="offer__field offer__field--ok">Смайлики</td>
+                <td class="offer__field offer__field--ok">Смайлики</td>
+              </tr>
+              <tr>
+                <td class="offer__field offer__field--empty offer__field--fill">Комментарии</td>
+                <td class="offer__field offer__field--cancel">Комментарии</td>
+                <td class="offer__field offer__field--cancel">Комментарии</td>
+                <td class="offer__field offer__field--ok">Комментарии</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+<!--
     <section class="offer">
       <div class="offer__name">
         <h3 class="offer__name-head">Стандарт</h3>
@@ -166,7 +210,7 @@
             <path d="M15.497 13.376L26.312 2.562A1.5 1.5 0 1 0 24.191.441L13.376 11.255 2.562.439A1.5 1.5 0 1 0 .441 2.56l10.814 10.815L.439 24.19a1.5 1.5 0 1 0 2.122 2.121l10.815-10.814L24.19 26.312c.293.293.677.439 1.061.439s.768-.146 1.061-.439a1.5 1.5 0 0 0 0-2.121L15.497 13.376z"/>
           </svg>
         </li>
-      </ul>
+      </ul> -->
 
       <!-- Элементы управления -->
     </section>

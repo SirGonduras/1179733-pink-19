@@ -1,0 +1,42 @@
+.offer__wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+
+.offer__container {
+  padding-top: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.offer__list {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.offer__value {
+  padding: 21px 92px;
+  background-color: @dark-blue;
+  border: solid 2px rgb(229, 229, 229);
+
+  font-size: 18px;
+  color: @white;
+
+  &--empty {
+    border-top: none;
+    border-left: none;
+    background-color: transparent;
+  }
+}
+
+.offer__price {
+  .reset();
+}
+
+.offer__field {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 30px;
+  border: solid 2px rgb(229, 229, 229);
+}
