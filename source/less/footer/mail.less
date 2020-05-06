@@ -1,3 +1,7 @@
+.mail {
+  margin-bottom: 28px;
+}
+
 .mail__inv {
   .reset();
   margin: 0 auto;
@@ -10,10 +14,20 @@
 .mail__address {
   .reset();
   margin: 0 auto;
-  margin-bottom: 28px;
   display: block;
 
   font-size: 24px;
   color: #d22856;
   font-weight: 300;
+}
+
+@media (min-width: @tablet-width) {
+  .mail {
+    margin-bottom: 43px;
+    width: 242px;
+  }
+
+  .mail__inv {
+    margin-bottom: 4px;
+  }
 }
