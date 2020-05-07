@@ -6,6 +6,31 @@
   .reset();
   margin: 0 auto;
   margin-bottom: 45px;
-  padding-top: 54px;
+  padding-top: 45px;
   width: 274px;
+
+  line-height: 30px;
+}
+
+.page-form__additional-text {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .page-form__contest-intro {
+    padding-top: 92px;
+    width: 495px;
+
+    font-size: 18px;
+  }
+
+  .page-form__additional-text {
+    display: contents;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-form__contest-intro {
+    width: 757px;
+  }
 }
