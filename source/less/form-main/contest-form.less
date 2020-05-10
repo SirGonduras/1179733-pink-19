@@ -269,7 +269,7 @@
     height: 35px;
 
     position: absolute;
-    left: 0px;
+    left: 0;
     bottom: -1px;
 
     background-color: @white;
@@ -372,7 +372,7 @@
   .contest-form__part-achievements {
     width: auto;
     background-color: transparent;
-    border: solid 2px rgb(229, 229, 229);
+    border: none;
   }
 
   .contest-form__fieldset-container {
@@ -495,10 +495,6 @@
     }
   }
 
-  .contest-form__part-achievements {
-    border: none;
-  }
-
   .contest-form__achievements-list {
     margin-bottom: 9px;
   }
@@ -548,10 +544,8 @@
     margin-right: -1px;
     padding-bottom: 0;
   }
-
 }
 
+@media (min-width: @desktop-width) {
 
-// @media (min-width: @desktop-width) {
-
-// }
+}
