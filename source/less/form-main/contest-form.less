@@ -41,12 +41,20 @@
 
 .contest-form__fieldset-container {
   background-color: @grey;
+
+  &--apps {
+    margin-bottom: 37px;
+  }
 }
 
 .contest-form__part-achievements {
   margin: 0 auto;
   width: 320px;
   box-sizing: border-box;
+}
+
+.contest-form__achievements-list {
+  margin-bottom: 5px;
 }
 
 .contest-form__header {
@@ -73,6 +81,10 @@
 
   &--contacts {
     display: none;
+  }
+
+  &--emotions {
+    margin-bottom: 17px;
   }
 }
 
@@ -149,12 +161,12 @@
 
 .contest-form__contacts-item {
   margin: 0 auto;
-  margin-bottom: 18px;
-  .set-size(280px, 90px);
-}
+  margin-bottom: 17px;
+  width: 280px;
 
-.contest-form__contacts-item:last-child {
-  margin-bottom: 0;
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .contest-form__contacts-label {
@@ -194,6 +206,7 @@
 .contest-form__part-apps {
   margin: 0 auto;
   width: 320px;
+  padding-bottom: 46px;
 }
 
 .contest-form__apps-head {
