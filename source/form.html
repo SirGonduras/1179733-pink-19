@@ -80,7 +80,7 @@
           </ul>
         </fieldset>
 
-        <div class="contest-form__fieldset-container">
+        <div class="contest-form__fieldset-container contest-form__fieldset-container--achievements">
           <fieldset class="contest-form__part-achievements site-field">
             <h2 class="contest-form__header contest-form__header--achievements">
               Ваши безбашенные
@@ -122,6 +122,10 @@
         </div>
 
         <fieldset class="contest-form__part-contacts site-field">
+          <h2 class="contest-form__header contest-form__header--contacts">
+            Контактная информация
+          </h2>
+
           <ul class="contest-form__contacts-list site-list">
             <li class="contest-form__contacts-item site-item">
               <label class="contest-form__contacts-label" for="phone">Номер телефона</label>
@@ -135,7 +139,7 @@
           </ul>
         </fieldset>
 
-        <div class="contest-form__fieldset-container">
+        <div class="contest-form__fieldset-container .contest-form__fieldset-container--apps">
           <fieldset class="contest-form__part-apps site-field">
             <h2 class="contest-form__header contest-form__header--apps">
               С каким приложением путешествовали?
@@ -161,14 +165,16 @@
         </div>
 
         <fieldset class="contest-form__part-emotions site-field">
-          <h2 class="contest-form__emotions-head">
+          <h2 class="contest-form__header contest-form__header--emotions">
             Опишите свои эмоции
           </h2>
           <textarea class="contest-form__emotions-textarea" name="emotions" id="emotions" rows="7">Можно прям в красках, не стесняясь в выражениях </textarea>
+        </fieldset>
 
+        <div class="contest-form__container-submit">
           <button class="contest-form__btn-submit site-button" type="submit">Отправить форму</button>
           <p class="contest-form__attention-text"><span class="style-pink">*</span> — обязательные поля</p>
-        </fieldset>
+        </div>
       </div>
     </form>
 
