@@ -544,8 +544,129 @@
     margin-right: -1px;
     padding-bottom: 0;
   }
+
+  .contest-form__add-text {
+    display: none;
+  }
 }
 
 @media (min-width: @desktop-width) {
+  .page-form__contest-intro {
+    padding-bottom: 0;
+    margin-bottom: 47px;
+  }
 
+  .contest-form__wrapper {
+    width: 940px;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .contest-form__part-fullname {
+    width: 435px;
+  }
+
+  .contest-form__fieldset-container {
+    .reset();
+
+    &--apps {
+      margin-top: 31px;
+      width: 431px;
+      margin-bottom: 64px;
+    }
+
+    &--achievements {
+      margin-bottom: 64px;
+      width: 100%;
+    }
+  }
+
+  .contest-form__header {
+    &--contacts {
+      margin-bottom: 32px;
+    }
+
+    &--achievements {
+      margin-top: -10px;
+    }
+  }
+
+  .contest-form__apps-list {
+    margin-left: 73px;
+    padding-top: 37px;
+  }
+
+  .contest-form__part-contacts {
+    width: 100%;
+  }
+
+  .contest-form__contacts-list {
+    margin: 0 auto;
+    padding-bottom: 6px;
+    display: flex;
+    justify-content: space-between;
+    width: 890px;
+  }
+
+  .contest-form__contacts-item {
+    width: 375px;
+    margin-bottom: 0;
+  }
+
+  .contest-form__achievements-list {
+    margin: 0 auto;
+    margin-left: 58px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .contest-form__achievements-item {
+    .reset();
+    width: 260px;
+    margin-right: 55px;
+    margin-bottom: 42px;
+
+    &--noris {
+      margin-right: 36px;
+    }
+
+    &--bought {
+      margin-right: 35px;
+    }
+
+    &:nth-of-type(2n) {
+      order: 1;
+    }
+
+    &:nth-of-type(5) {
+      margin-right: 0;
+    }
+
+    &:last-of-type {
+      margin-right: 0;
+      margin-bottom: 54px;
+      padding-bottom: 0;
+    }
+  }
+
+  .contest-form__part-emotions {
+    width: 100%;
+  }
+
+  .contest-form__emotions-textarea {
+    width: 816px;
+    height: 124px;
+    margin-bottom: 41px;
+  }
+
+  .contest-form__container-submit {
+    margin-bottom: 0;
+    width: 100%;
+  }
+
+  .contest-form__add-text {
+    display: inline;
+  }
 }
