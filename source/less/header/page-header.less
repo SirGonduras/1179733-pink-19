@@ -1,26 +1,13 @@
 .page-header {
   margin: 0 auto;
   background-color: @dark-blue;
-}
 
-.page-header__logo-wrapper {
-  margin: 0 auto;
-  width: 280px;
-}
-
-.page-header__logo {
-  .reset();
-  padding-top: 21px;
-  padding-bottom: 22px;
-
-  display: block;
-  box-sizing: border-box;
-  text-align: left;
-  border-bottom: 1px solid #000000;
-}
-
-.page-header__logo-image {
-  fill: @white;
+  &--nav-closed {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
 }
 
 @media (min-width: @tablet-width) {

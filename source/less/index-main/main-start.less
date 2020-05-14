@@ -3,18 +3,26 @@
   margin: 0 auto;
 
   background: @dark url("../img/bg-back-mobile@1x.jpg") no-repeat 50% -32%;
+
+  &--nav-closed {
+    background: @dark url("../img/bg-back-mobile@1x.jpg") no-repeat 50% 0%;
+  }
 }
 
 .main-start__wrapper {
   margin: 0 auto;
-  padding-top: 20px;
   width: 320px;
-
   background: url("../img/iphone-hand-mobile@1x.png") no-repeat 0% 29%;
+
+
+  &--nav-closed {
+    background: url("../img/iphone-hand-mobile@1x.png") no-repeat 0% 40%;
+  }
 }
 
 .main-start__index-tagline {
   .reset();
+  padding-top: 21px;
   width: 225px;
   margin: 0 auto;
   margin-bottom: 340px;
@@ -24,6 +32,10 @@
   font-weight: 300;
   line-height: 31px;
   letter-spacing: normal;
+
+  &--nav-closed {
+    padding-top: 90px;
+  }
 }
 
 @media (min-width: @tablet-width) {
