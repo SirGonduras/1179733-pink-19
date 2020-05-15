@@ -28,6 +28,10 @@
 @media (min-width: @tablet-width) {
   .photo-start {
     background: @dark url("../img/bg-back-tablet@1x.jpg") no-repeat 50% 28%;
+
+    &--nav-closed {
+      background: @dark url("../img/bg-back-tablet@1x.jpg") no-repeat 50% 0%;
+    }
   }
 
   .photo-start__tagline {
@@ -37,6 +41,11 @@
 
     font-size: 50px;
     line-height: 59px;
+
+    &--nav-closed {
+      padding-top: 183px;
+      padding-bottom: 139px;
+    }
   }
 }
 
