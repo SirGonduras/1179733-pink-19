@@ -206,9 +206,9 @@
   }
 
   .offer__field-text {
+    width: 113px;
     text-align: start;
     text-transform: none;
-    width: 113px;
   }
 
   .offer__price {
@@ -221,5 +221,53 @@
 
   .offer__switcher-container {
     display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .offer__container {
+    width: 940px;
+  }
+
+  .offer__wrapper {
+    padding-top: 151px;
+    padding-bottom: 96px;
+  }
+
+  .offer__value {
+    padding-top: 18px;
+    font-size: 18px;
+
+    &--flag {
+      position: relative;
+      background: @dark-blue url("../img/bg-hit.svg") no-repeat 0 0;
+    }
+
+    &--flag::before {
+      top: 16px;
+      left: 11px;
+    }
+  }
+
+  .offer__price {
+    margin-left: 68px;
+    margin-right: 64px;
+    padding-bottom: 22px;
+    font-size: 24px;
+  }
+
+  .offer__field {
+    &--empty {
+      padding-top: 12px;
+      padding-bottom: 16px;
+      padding-right: 51px;
+      padding-left: 21px;
+    }
+  }
+
+  .offer__field-text {
+    width: 160px;
+    font-size: 18px;
+    line-height: 30px;
   }
 }
