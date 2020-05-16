@@ -1,5 +1,6 @@
 .advantages {
   padding-top: 40px;
+  background-color: @white;
 }
 
 .advantages__question {
@@ -17,7 +18,7 @@
 .advantages__answer {
   .reset();
   margin: 0 auto;
-  margin-bottom: 108px;
+  margin-bottom: 31px;
   width: 204px;
 
   font-size: 24px;
@@ -29,6 +30,11 @@
 .advantages__description {
   margin: 0 auto;
   width: 320px;
+  background-color:  @grey;
+  background-image:url("../img/bg-triangle-white.svg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: 50% 0;
 }
 
 .advantages__container-center {
@@ -36,8 +42,16 @@
   background: url("../img/iphone-screen-mobile@1x.png") no-repeat 50% 111%;
 }
 
+.advantages__list {
+  padding-top: 77px;
+}
+
 .advantages__item {
   margin-bottom: 27px;
+}
+
+.advantages__br {
+  display: none;
 }
 
 .advantages__item:last-child {
@@ -99,13 +113,18 @@
   }
 
   .advantages__list {
+    padding-top: 0;
     width: 310px;
     margin-left: 309px;
     text-align: left;
   }
 
   .advantages__item:not(:last-child) {
-    margin-bottom: 30px;
+    margin-bottom: 31px;
+  }
+
+  .advantages__br {
+    display: grid;
   }
 
   .advantages__head {
@@ -171,6 +190,10 @@
     &--happy-mood {
       background: url("../img/iphone-screen-3-desktop@1x.png") no-repeat 46% 3%;
     }
+  }
+
+  .advantages__br {
+    display: none;
   }
 
   .advantages__head {
