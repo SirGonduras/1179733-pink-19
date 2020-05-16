@@ -163,15 +163,63 @@
 
 @media (min-width: @tablet-width) {
   .offer__wrapper {
+    margin-bottom: 0;
+    padding-bottom: 69px;
+    padding-top: 101px;
     width: auto;
-    overflow: auto;
+    overflow: visible;
   }
 
   .offer__container {
+    margin: 0 auto;
+    width: 620px;
     display: block;
   }
 
+  .offer__field {
+    padding-top: 5px;
+    padding-bottom: 9.8px;
+
+    &--empty {
+      display: table-cell;
+      padding-left: 15px;
+      padding-right: 25px;
+    }
+  }
+
   .offer__value {
-    padding: 19px 39px 13px 40px;
+    padding-top: 12px;
+    font-size: 16px;
+
+    &--flag {
+      background: #283645 url(../img/bg-hit-tablet.svg) no-repeat 0 0;
+    }
+
+    &--flag::before {
+      top: 8px;
+      left: 7px;
+    }
+
+    &--empty {
+      display: table-cell;
+    }
+  }
+
+  .offer__field-text {
+    text-align: start;
+    text-transform: none;
+    width: 113px;
+  }
+
+  .offer__price {
+    margin-left: 26px;
+    margin-right: 25px;
+    margin-top: -3px;
+    padding-bottom: 9px;
+    font-size: 18px;
+  }
+
+  .offer__switcher-container {
+    display: none;
   }
 }

@@ -80,27 +80,27 @@
 
 .reviews__switcher[type="radio"]:checked + .reviews__switcher-label:after,
 .reviews__switcher[type="radio"]:not(:checked) + .reviews__switcher-label:after {
-    content: '';
-    width: 6px;
-    height: 6px;
-    border: 3px solid #283645;
-    background: #ffffff;
-    position: absolute;
-    left: -3px;
-    top: 2px;
-    border-radius: 100%;
-    -webkit-transition: all 0.2s ease;
-    transition: all 0.2s ease;
+  content: '';
+  width: 6px;
+  height: 6px;
+  border: 3px solid #283645;
+  background: #ffffff;
+  position: absolute;
+  left: -3px;
+  top: 2px;
+  border-radius: 100%;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 .reviews__switcher[type="radio"]:not(:checked) + .reviews__switcher-label:after {
-    opacity: 0;
-    transform: scale(0);
+  opacity: 0;
+  transform: scale(0);
 }
 
 .reviews__switcher[type="radio"]:checked + .reviews__switcher-label:after {
-    opacity: 1;
-    -webkit-transform: scale(1);
-    transform: scale(1);
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
 }
 
 @media (min-width: @tablet-width) {
@@ -137,7 +137,7 @@
   }
 
   .reviews__switcher-container {
-    padding-bottom: 15px;
+    padding-bottom: 0;
     order: 4;
   }
 }
