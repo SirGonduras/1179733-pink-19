@@ -1,5 +1,4 @@
 .offer {
-  background-color: @grey;
   background: @grey url("../img/bg-triangle-white.svg") no-repeat 50% -1px;
 }
 
@@ -28,6 +27,7 @@
 
   background-color: @white;
   border: solid 2px rgb(229, 229, 229);
+
   &--empty {
     display: none;
   }
@@ -115,8 +115,7 @@
 }
 
 .offer__switcher[type="radio"]:checked + .offer__switcher-label,
-.offer__switcher[type="radio"]:not(:checked) + .offer__switcher-label
-{
+.offer__switcher[type="radio"]:not(:checked) + .offer__switcher-label {
   position: relative;
   cursor: pointer;
   line-height: 20px;
@@ -124,9 +123,9 @@
   color: #ffffff;
 }
 
-.offer__switcher[type="radio"]:checked + .offer__switcher-label:before,
-.offer__switcher[type="radio"]:not(:checked) + .offer__switcher-label:before {
-  content: '';
+.offer__switcher[type="radio"]:checked + .offer__switcher-label::before,
+.offer__switcher[type="radio"]:not(:checked) + .offer__switcher-label::before {
+  content: "";
   position: absolute;
   left: 0;
   top: 5px;
@@ -136,9 +135,9 @@
   background: #bec2c7;
 }
 
-.offer__switcher[type="radio"]:checked + .offer__switcher-label:after,
-.offer__switcher[type="radio"]:not(:checked) + .offer__switcher-label:after {
-  content: '';
+.offer__switcher[type="radio"]:checked + .offer__switcher-label::after,
+.offer__switcher[type="radio"]:not(:checked) + .offer__switcher-label::after {
+  content: "";
   width: 6px;
   height: 6px;
   border: 3px solid #283645;
@@ -147,17 +146,16 @@
   left: -3px;
   top: 2px;
   border-radius: 100%;
-  -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
 }
-.offer__switcher[type="radio"]:not(:checked) + .offer__switcher-label:after {
+
+.offer__switcher[type="radio"]:not(:checked) + .offer__switcher-label::after {
   opacity: 0;
   transform: scale(0);
 }
 
-.offer__switcher[type="radio"]:checked + .offer__switcher-label:after {
+.offer__switcher[type="radio"]:checked + .offer__switcher-label::after {
   opacity: 1;
-  -webkit-transform: scale(1);
   transform: scale(1);
 }
 
@@ -192,7 +190,7 @@
     font-size: 16px;
 
     &--flag {
-      background: #283645 url(../img/bg-hit-tablet.svg) no-repeat 0 0;
+      background: #283645 url("../img/bg-hit-tablet.svg") no-repeat 0 0;
     }
 
     &--flag::before {
