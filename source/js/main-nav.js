@@ -4,13 +4,13 @@ function indexStart(check) {
   let wrapper = document.querySelector('.main-start__wrapper');
 
   if (check) {
-    mainStart.classList.add('main-start--nav-closed');
-    indexTagline.classList.add('main-start__index-tagline--nav-closed');
-    wrapper.classList.add('main-start__wrapper--nav-closed');
-  } else {
     mainStart.classList.remove('main-start--nav-closed');
     indexTagline.classList.remove('main-start__index-tagline--nav-closed');
     wrapper.classList.remove('main-start__wrapper--nav-closed');
+  } else {
+    mainStart.classList.add('main-start--nav-closed');
+    indexTagline.classList.add('main-start__index-tagline--nav-closed');
+    wrapper.classList.add('main-start__wrapper--nav-closed');
   }
 }
 
@@ -19,11 +19,11 @@ function photoStart(check) {
   let photoStart = document.querySelector('.photo-start');
 
   if (check) {
-    photoTagline.classList.add('photo-start__tagline--nav-closed');
-    photoStart.classList.add('photo-start--nav-closed');
-  } else {
     photoTagline.classList.remove('photo-start__tagline--nav-closed');
     photoStart.classList.remove('photo-start--nav-closed');
+  } else {
+    photoTagline.classList.add('photo-start__tagline--nav-closed');
+    photoStart.classList.add('photo-start--nav-closed');
   }
 }
 
@@ -32,11 +32,11 @@ function formStart(check) {
   let formStart = document.querySelector('.form-start');
 
   if (check) {
-    formTagline.classList.add('form-start__tagline--nav-closed');
-    formStart.classList.add('form-start--nav-closed');
-  } else {
     formTagline.classList.remove('form-start__tagline--nav-closed');
     formStart.classList.remove('form-start--nav-closed');
+  } else {
+    formTagline.classList.add('form-start__tagline--nav-closed');
+    formStart.classList.add('form-start--nav-closed');
   }
 }
 
