@@ -140,7 +140,7 @@
     width: 22px;
     height: 16px;
 
-    background: url("../../img/icon-yes.svg") no-repeat 0 0;
+    background: url("../img/icon-yes.svg") no-repeat 0 0;
   }
 }
 
@@ -201,6 +201,10 @@
   font-size: 18px;
   line-height: 30px;
   text-align: left;
+}
+
+.contest-form__icon-container {
+  display: none;
 }
 
 .contest-form__part-apps {
@@ -461,6 +465,7 @@
 
   .contest-form__contacts-item {
     display: flex;
+    position: relative;
     flex-direction: column;
     margin-bottom: 20px;
     width: 500px;
@@ -492,6 +497,28 @@
       width: 60px;
       height: 60px;
       background-color: rgb(229, 229, 229);
+    }
+  }
+
+  .contest-form__icon-container {
+    display: block;
+    position: absolute;
+    right: 1px;
+    top: 1px;
+    width: 60px;
+    height: 60px;
+    background-color: #e5e5e5;
+  }
+
+  .contest-form__icon {
+    fill: #d22856;
+
+    &--phone {
+      margin-top: 20px;
+    }
+
+    &--mail {
+      margin-top: 23px;
     }
   }
 
