@@ -13,12 +13,20 @@
   color: @white;
   font-weight: 300;
   line-height: 29px;
+
+  &--nav-closed {
+    padding-top: 100px;
+  }
 }
 
 
 @media (min-width: @tablet-width) {
   .form-start {
     background: @dark url("../img/bg-back-tablet@1x.jpg") no-repeat 50% 28%;
+
+    &--nav-closed {
+      background: @dark url("../img/bg-back-tablet@1x.jpg") no-repeat 50% 0;
+    }
   }
 
   .form-start__tagline {
@@ -27,12 +35,16 @@
     width: 490px;
     font-size: 50px;
     line-height: 59px;
+
+    &--nav-closed {
+      padding-top: 183px;
+    }
   }
 }
 
 @media (min-width: @desktop-width) {
   .form-start {
-    background: @dark url("../img/bg-back-desktop@1x.jpg") no-repeat 50% 19%;
+    background: @dark url("../img/bg-back-desktop@1x.jpg") no-repeat 50% 0%;
   }
 
   .form-start__tagline {
