@@ -23,6 +23,22 @@
 
 .main-nav__logo-image {
   fill: @white;
+
+  &--tablet {
+    display: none;
+  }
+
+  &--desktop {
+    display: none;
+  }
+
+  &:hover {
+    fill: #d22856;
+  }
+
+  &:active {
+    fill: rgba(255, 255, 255, 0.3);
+  }
 }
 
 .main-nav__toggle {
@@ -110,8 +126,18 @@
 
 @media (min-width: @tablet-width) {
   .main-nav__logo {
-    padding-top: 45px;
-    padding-bottom: 39px;
+    padding-top: 28px;
+    padding-bottom: 40px;
+  }
+
+  .main-nav__logo-image {
+    &--mobile {
+      display: none;
+    }
+
+    &--tablet {
+      display: block;
+    }
   }
 
   .main-nav__logo-wrapper {
@@ -162,12 +188,23 @@
   .main-nav__logo {
     .reset();
     margin-right: 172px;
-    padding-top: 33px;
+    padding-top: 27px;
     padding-bottom: 77px;
     width: 147px;
     height: 40px;
 
     border: none;
+  }
+
+  .main-nav__logo-image {
+
+    &--tablet {
+      display: none;
+    }
+
+    &--desktop {
+      display: block;
+    }
   }
 
   .main-nav__list {
