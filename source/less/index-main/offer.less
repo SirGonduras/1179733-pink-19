@@ -22,9 +22,8 @@
 }
 
 .offer__field {
-  padding-top: 11px;
-  padding-bottom: 17px;
-
+  text-align: left;
+  box-sizing: border-box;
   background-color: @white;
   border: solid 2px rgb(229, 229, 229);
 
@@ -34,11 +33,30 @@
 }
 
 .offer__field-text {
+  display: inline-block;
   .reset();
+  margin-left: 23px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  letter-spacing: 0.3px;
+  width: 150px;
   font-size: 14px;
   font-weight: 300;
   line-height: 30px;
   text-transform: uppercase;
+}
+
+.offer__icon-yes {
+  display: inline-block;
+  padding-top: 1px;
+  margin-left: 50px;
+  fill: #3dc644;
+}
+
+.offer__icon-no {
+  margin-left: 53px;
+  padding-top: 9px;
+  fill: #f25b26;
 }
 
 .offer__value {
