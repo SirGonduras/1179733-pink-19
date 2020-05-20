@@ -193,8 +193,7 @@
   }
 
   .offer__field {
-    padding-top: 5px;
-    padding-bottom: 9.8px;
+    padding: 0;
 
     &--empty {
       display: table-cell;
@@ -222,16 +221,34 @@
   }
 
   .offer__field-text {
-    width: 113px;
-    text-align: start;
-    text-transform: none;
+    display: none;
+
+    &--first {
+      display: block;
+      margin-left: 0px;
+      padding-top: 6px;
+      padding-bottom: 9px;
+      padding-right: 0;
+      width: 114px;
+      font-size: 14px;
+      text-transform: none;
+    }
+  }
+
+  .offer__icon-yes {
+    margin-left: 60px;
+  }
+
+  .offer__icon-no {
+    margin-left: 62px;
+    padding-top: 5px;
   }
 
   .offer__price {
     margin-left: 26px;
     margin-right: 25px;
     margin-top: -3px;
-    padding-bottom: 9px;
+    padding-bottom: 7px;
     font-size: 18px;
   }
 
@@ -265,20 +282,29 @@
     }
   }
 
+  .offer__field-text {
+    &--first {
+      display: block;
+      margin-left: 7px;
+      margin-right: 25px;
+      padding-top: 12px;
+      padding-bottom: 17px;
+    }
+  }
+
+  .offer__icon-yes {
+    margin-left: 102px;
+  }
+
+  .offer__icon-no {
+    margin-left: 103px;
+  }
+
   .offer__price {
-    margin-left: 68px;
+    margin-left: 67px;
     margin-right: 64px;
     padding-bottom: 22px;
     font-size: 24px;
-  }
-
-  .offer__field {
-    &--empty {
-      padding-top: 12px;
-      padding-bottom: 16px;
-      padding-right: 51px;
-      padding-left: 21px;
-    }
   }
 
   .offer__field-text {
