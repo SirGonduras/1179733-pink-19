@@ -29,6 +29,7 @@
   height: 63px;
   box-sizing: border-box;
   border: 2px solid rgb(229, 229, 229);
+  outline: none;
 }
 
 .contest-form__fullname-input[type="text"] {
@@ -185,6 +186,7 @@
   height: 60px;
   box-sizing: border-box;
   border: 2px solid rgb(229, 229, 229);
+  outline: none;
 }
 
 .contest-form__contacts-input[type="tel"] {
@@ -315,8 +317,21 @@
   font-weight: bold;
   line-height: 30px;
   text-transform: uppercase;
-
+  outline: none;
   background-color: #2aab6d;
+
+  &:hover {
+    background-color: #1c9b5e;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:disabled {
+    border: solid 2px rgb(229, 229, 229);
+    color: @white;
+  }
 }
 
 .contest-form__attention-text {
@@ -371,6 +386,7 @@
     box-sizing: border-box;
     margin-left: 19px;
     flex: 1 1 auto;
+    outline: none;
   }
 
   .contest-form__part-achievements {
