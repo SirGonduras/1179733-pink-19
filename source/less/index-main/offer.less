@@ -1,5 +1,10 @@
 .offer {
-  background: @grey url("../img/bg-triangle-white.svg") no-repeat 50% -1px;
+  // background: @grey url("../img/bg-triangle-white.svg") no-repeat center top / contain;
+  background-image: url(../img/bg-triangle-white.svg);
+  background-color: @grey;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: 50% 0;
 }
 
 .offer__wrapper {
@@ -180,8 +185,8 @@
 @media (min-width: @tablet-width) {
   .offer__wrapper {
     margin-bottom: 0;
-    padding-bottom: 69px;
-    padding-top: 101px;
+    padding-bottom: 67px;
+    padding-top: 88px;
     width: auto;
     overflow: visible;
   }
@@ -263,8 +268,8 @@
   }
 
   .offer__wrapper {
-    padding-top: 151px;
-    padding-bottom: 96px;
+    padding-top: 153px;
+    padding-bottom: 93px;
   }
 
   .offer__value {
