@@ -1,6 +1,5 @@
 .offer {
-  // background: @grey url("../img/bg-triangle-white.svg") no-repeat center top / contain;
-  background-image: url(../img/bg-triangle-white.svg);
+  background-image: url("../img/bg-triangle-white.svg");
   background-color: @grey;
   background-repeat: no-repeat;
   background-size: 100% auto;
@@ -230,7 +229,7 @@
 
     &--first {
       display: block;
-      margin-left: 0px;
+      margin-left: 0;
       padding-top: 6px;
       padding-bottom: 9px;
       padding-right: 0;
@@ -288,6 +287,10 @@
   }
 
   .offer__field-text {
+    width: 160px;
+    font-size: 18px;
+    line-height: 30px;
+
     &--first {
       display: block;
       margin-left: 7px;
@@ -310,11 +313,5 @@
     margin-right: 64px;
     padding-bottom: 22px;
     font-size: 24px;
-  }
-
-  .offer__field-text {
-    width: 160px;
-    font-size: 18px;
-    line-height: 30px;
   }
 }
