@@ -18,6 +18,19 @@
   }
 }
 
+.main-footer__logotype {
+  fill: @dark-blue;
+
+  &:hover {
+    fill: #d22856;
+  }
+
+  &:active {
+    fill: @dark-blue;
+    opacity: 0.3;
+  }
+}
+
 .main-footer__social-list {
   margin: 0 auto;
   margin-bottom: 39px;
@@ -34,6 +47,14 @@
 
   border: 3px solid #e9ebec;
   border-radius: 25px;
+
+  &:hover {
+    border: 3px solid @dark-blue;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
 }
 
 .main-footer__social-icon {
@@ -70,6 +91,14 @@
 
 .main-footer__academy-logo {
   fill: #d22856;
+
+  &:hover {
+    fill: @dark-blue;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -81,20 +110,19 @@
 
   .main-footer__wrapper {
     margin: 0 auto;
-    padding-bottom: 36px;
+    padding-top: 37px;
+    padding-bottom: 41px;
     width: 620px;
     display: flex;
   }
 
   .main-footer__logotype-link {
     .reset();
-    padding-top: 35px;
   }
 
   .main-footer__social-list {
     .reset();
     margin-left: 73px;
-    padding-top: 39px;
     width: 178px;
   }
 
@@ -110,41 +138,37 @@
 
   .main-footer__academy-contaner {
     .reset();
+    padding-top: 11px;
     margin-left: auto;
-    padding-top: 51px;
   }
 
   .main-footer__developed {
-    padding-top: 6px;
+    padding-top: 9px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .main-footer__wrapper {
-    padding-bottom: 73px;
+    padding-bottom: 74px;
+    padding-top: 73px;
     width: 940px;
 
-    &--form {
-      margin-top: -30px;
+    &--photo {
+      padding-top: 102px;
+      padding-bottom: 73px;
     }
   }
 
-  .main-footer__logotype-link {
-    padding-top: 97px;
-  }
-
   .main-footer__social-list {
-    margin-left: 235px;
-    padding-top: 102px;
+    margin-left: 232px;
   }
 
   .main-footer__academy-contaner {
-    padding-top: 113px;
     width: 154px;
   }
 
   .main-footer__developed {
-    padding-top: 4px;
+    padding-top: 7px;
     font-size: 18px;
   }
 }

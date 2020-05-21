@@ -18,6 +18,16 @@
   font-size: 24px;
   color: #d22856;
   font-weight: 300;
+
+  &:hover {
+    color: @dark-blue;
+    border-bottom: 1px solid @dark-blue;
+  }
+
+  &:active {
+    color: rgba(40, 54, 69, 0.3);
+    border-bottom: none;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -28,5 +38,16 @@
 
   .mail__inv {
     margin-bottom: 4px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .mail {
+    margin-bottom: 0;
+    order: 3;
+  }
+
+  .mail__inv {
+    margin-bottom: 23px;
   }
 }

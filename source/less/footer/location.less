@@ -1,5 +1,5 @@
 .location {
-  padding-bottom: 24px;
+  padding-bottom: 35px;
 }
 
 .location__inv {
@@ -25,6 +25,7 @@
   .location {
     margin: 0 auto;
     width: 212px;
+    padding-bottom: 27px;
   }
 
   .location__inv {
@@ -33,5 +34,16 @@
 
   .location__address {
     line-height: 29px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .location {
+    padding-bottom: 0;
+    order: 2;
+  }
+
+  .location__inv {
+    margin-bottom: 23px;
   }
 }
