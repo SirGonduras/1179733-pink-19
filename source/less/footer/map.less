@@ -33,13 +33,21 @@
 
   @media (min-width: @desktop-width) {
     .map {
-      height: 494px;
+      height: 522px;
 
       background:
         url("../img/bg-triangle-white-footer.svg") no-repeat center top,
-        url("../img/icon-map-marker.svg") no-repeat center 194px,
-        url("../img/bg-map-tablet@1x.jpg") no-repeat center 73%;
-      background-size: 110% auto, auto, 704px auto;
+        url("../img/icon-map-marker.svg") no-repeat center 284px,
+        url("../img/bg-map-desktop@1x.jpg") no-repeat 44.5% 53%;
+      background-size: contain, auto, auto auto;
+
+      @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+        background:
+          url("../img/bg-triangle-white-footer.svg") no-repeat center top,
+          url("../img/icon-map-marker.svg") no-repeat center 284px,
+          url("../img/bg-map-desktop@2x.jpg") no-repeat 44.5% 53%;
+        background-size: contain, auto, 2548px auto;
+      }
     }
   }
 }

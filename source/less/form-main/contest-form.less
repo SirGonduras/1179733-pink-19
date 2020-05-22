@@ -292,6 +292,10 @@
   }
 }
 
+.contest-form__add-text {
+  display: none;
+}
+
 .contest-form__emotions-textarea {
   margin: 0 auto;
   margin-bottom: 41px;
@@ -318,6 +322,7 @@
   line-height: 30px;
   text-transform: uppercase;
   outline: none;
+  border: solid 2px #1c9b5e;
   background-color: #2aab6d;
 
   &:hover {
@@ -336,7 +341,7 @@
 
 .contest-form__attention-text {
   .reset();
-  padding-bottom: 24px;
+  padding-bottom: 15px;
   line-height: 30px;
   text-transform: uppercase;
 }
@@ -377,15 +382,14 @@
 
   .contest-form__fullname-label {
     .reset();
-    flex: 0 0;
   }
 
   .contest-form__fullname-input {
     .reset();
     width: 100%;
+    display: block;
     box-sizing: border-box;
     margin-left: 19px;
-    flex: 1 1 auto;
     outline: none;
   }
 

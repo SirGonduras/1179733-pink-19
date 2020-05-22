@@ -1,5 +1,9 @@
 .offer {
-  background: @grey url("../img/bg-triangle-white.svg") no-repeat 50% -1px;
+  background-image: url("../img/bg-triangle-white.svg");
+  background-color: @grey;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: 50% 0;
 }
 
 .offer__wrapper {
@@ -22,9 +26,8 @@
 }
 
 .offer__field {
-  padding-top: 11px;
-  padding-bottom: 17px;
-
+  text-align: left;
+  box-sizing: border-box;
   background-color: @white;
   border: solid 2px rgb(229, 229, 229);
 
@@ -34,11 +37,30 @@
 }
 
 .offer__field-text {
+  display: inline-block;
   .reset();
+  margin-left: 23px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  letter-spacing: 0.3px;
+  width: 150px;
   font-size: 14px;
   font-weight: 300;
   line-height: 30px;
   text-transform: uppercase;
+}
+
+.offer__icon-yes {
+  display: inline-block;
+  padding-top: 1px;
+  margin-left: 50px;
+  fill: #3dc644;
+}
+
+.offer__icon-no {
+  margin-left: 53px;
+  padding-top: 9px;
+  fill: #f25b26;
 }
 
 .offer__value {
@@ -162,8 +184,8 @@
 @media (min-width: @tablet-width) {
   .offer__wrapper {
     margin-bottom: 0;
-    padding-bottom: 69px;
-    padding-top: 101px;
+    padding-bottom: 67px;
+    padding-top: 88px;
     width: auto;
     overflow: visible;
   }
@@ -175,8 +197,7 @@
   }
 
   .offer__field {
-    padding-top: 5px;
-    padding-bottom: 9.8px;
+    padding: 0;
 
     &--empty {
       display: table-cell;
@@ -204,16 +225,34 @@
   }
 
   .offer__field-text {
-    width: 113px;
-    text-align: start;
-    text-transform: none;
+    display: none;
+
+    &--first {
+      display: block;
+      margin-left: 0;
+      padding-top: 6px;
+      padding-bottom: 9px;
+      padding-right: 0;
+      width: 114px;
+      font-size: 14px;
+      text-transform: none;
+    }
+  }
+
+  .offer__icon-yes {
+    margin-left: 60px;
+  }
+
+  .offer__icon-no {
+    margin-left: 62px;
+    padding-top: 5px;
   }
 
   .offer__price {
     margin-left: 26px;
     margin-right: 25px;
     margin-top: -3px;
-    padding-bottom: 9px;
+    padding-bottom: 7px;
     font-size: 18px;
   }
 
@@ -228,8 +267,8 @@
   }
 
   .offer__wrapper {
-    padding-top: 151px;
-    padding-bottom: 96px;
+    padding-top: 153px;
+    padding-bottom: 93px;
   }
 
   .offer__value {
@@ -247,25 +286,32 @@
     }
   }
 
-  .offer__price {
-    margin-left: 68px;
-    margin-right: 64px;
-    padding-bottom: 22px;
-    font-size: 24px;
-  }
-
-  .offer__field {
-    &--empty {
-      padding-top: 12px;
-      padding-bottom: 16px;
-      padding-right: 51px;
-      padding-left: 21px;
-    }
-  }
-
   .offer__field-text {
     width: 160px;
     font-size: 18px;
     line-height: 30px;
+
+    &--first {
+      display: block;
+      margin-left: 7px;
+      margin-right: 25px;
+      padding-top: 12px;
+      padding-bottom: 17px;
+    }
+  }
+
+  .offer__icon-yes {
+    margin-left: 102px;
+  }
+
+  .offer__icon-no {
+    margin-left: 103px;
+  }
+
+  .offer__price {
+    margin-left: 67px;
+    margin-right: 64px;
+    padding-bottom: 22px;
+    font-size: 24px;
   }
 }
