@@ -17,10 +17,15 @@
 .page-photo__call-text {
   .reset();
   margin: 0 auto;
-  margin-top: 42px;
-  padding-bottom: 42px;
-  width: 261px;
   line-height: 30px;
+
+  &--first {
+    margin-top: 41px;
+  }
+
+  &--second {
+    margin-bottom: 42px;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -37,12 +42,18 @@
   }
 
   .page-photo__call-text {
-    margin-top: 65px;
-    padding-bottom: 69px;
-    width: 423px;
+    // width: 423px;
 
     font-size: 18px;
     line-height: 30px;
+
+    &--first {
+      margin-top: 65px;
+    }
+
+    &--second {
+      margin-bottom: 69px;
+    }
   }
 }
 
@@ -57,7 +68,12 @@
   }
 
   .page-photo__call-text {
-    margin-top: 60px;
-    padding-bottom: 65px;
+    &--first {
+      margin-top: 60px;
+    }
+
+    &--second {
+      margin-bottom: 65px;
+    }
   }
 }

@@ -129,8 +129,8 @@
 
     <article class="panorama">
       <div class="panorama__photo-container">
-        <picture>
-          <source media="(min-width: 1200px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+        <picture class="panorama__photo-pic">
+          <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
           <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
           <img class="panorama__photo" src="img/panorama-mobile@1x.jpg" width="320" height="137" srcset="img/panorama-mobile@2x.jpg 2x" alt="Фото панорамы моста">
         </picture>
@@ -158,7 +158,7 @@
         <li class="post-list__item site-item">
           <div class="post-list__photo-container">
             <picture>
-              <source media="(min-width: 1200px)" srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
+              <source media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
               <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
               <img class="post-list__photo" src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="Фото машины">
             </picture>
@@ -182,7 +182,7 @@
         <li class="post-list__item site-item">
           <div class="post-list__photo-container">
             <picture>
-              <source media="(min-width: 1200px)" srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
+              <source media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
               <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
               <img class="post-list__photo" src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="Фото Барабаны">
             </picture>
@@ -206,7 +206,7 @@
         <li class="post-list__item site-item">
           <div class="post-list__photo-container">
             <picture>
-              <source media="(min-width: 1200px)" srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
+              <source media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
               <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
               <img class="post-list__photo" src="img/photo-window-mobile@1x.jpg" width="280" height="180" alt="Фото окно">
             </picture>
@@ -231,7 +231,7 @@
         <li class="post-list__item site-item">
           <div class="post-list__photo-container">
             <picture>
-              <source media="(min-width: 1200px)" srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
+              <source media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
               <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
               <img class="post-list__photo" src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="Фото рынка">
             </picture>
@@ -255,7 +255,7 @@
         <li class="post-list__item site-item">
           <div class="post-list__photo-container">
             <picture>
-              <source media="(min-width: 1200px)" srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
+              <source media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
               <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
               <img class="post-list__photo" src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="Фото гор">
             </picture>
@@ -279,7 +279,7 @@
         <li class="post-list__item site-item">
           <div class="post-list__photo-container">
             <picture>
-              <source media="(min-width: 1200px)" srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
+              <source media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
               <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
               <img class="post-list__photo" src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="Фото крылья самолета">
             </picture>
@@ -302,9 +302,11 @@
       </ul>
     </div>
 
-    <p class="page-photo__call-text">
+    <p class="page-photo__call-text page-photo__call-text--first">
       Затмите их всех!
-      <br>
+    </p>
+
+    <p class="page-photo__call-text page-photo__call-text--second">
       Выкладывайте все, что накопилось в телефоне!
     </p>
 

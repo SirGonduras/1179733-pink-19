@@ -133,8 +133,14 @@
 
 @media (min-width: @desktop-width) {
   .panorama__photo-container {
-    width: 1200px;
+    width: 100%;
+    max-width: 1200px;
+    overflow: hidden;
     height: 506px;
+  }
+
+  .panorama__photo-pic {
+    width: 100%;
   }
 
   .panorama__photo-title {
