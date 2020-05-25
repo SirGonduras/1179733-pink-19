@@ -12,6 +12,7 @@
 
 .location__address {
   .reset();
+  width: 229px;
   margin: 0 auto;
   display: block;
 
@@ -23,9 +24,10 @@
 
 @media (min-width: @tablet-width) {
   .location {
+    .reset();
     margin: 0 auto;
+    margin-bottom: 14px;
     width: 212px;
-    padding-bottom: 27px;
   }
 
   .location__inv {
@@ -33,6 +35,8 @@
   }
 
   .location__address {
+    margin-left: -8px;
+    padding-bottom: 0;
     line-height: 29px;
   }
 }
