@@ -5,7 +5,6 @@
   <title>PINK</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="format-detection" content="telephone=no">
-  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.min.css">
   <script>
     document.createElement( "picture" );
@@ -118,6 +117,10 @@
     <symbol viewBox="0 0 21.706 41.719" id="icon-toggle-right">
       <path d="M19.661,20.859L0.248,1.446c-0.331-0.331-0.331-0.867,0-1.198c0.33-0.331,0.867-0.331,1.197,0l20.013,20.012 c0.33,0.33,0.33,0.867,0,1.197L1.445,41.471c-0.164,0.165-0.382,0.248-0.599,0.248s-0.434-0.083-0.599-0.248 c-0.331-0.331-0.331-0.867,0-1.198L19.661,20.859z"/>
     </symbol>
+
+    <!-- <symbol viewBox="0 0 595.28 61.905" id="bg-triangle-white-footer">
+      <polygon fill="#000000" points="297.64,61.905 0,0 595.28,0 "/>
+    </symbol> -->
   </svg>
 
   <header class="page-header">
@@ -161,23 +164,23 @@
         <h2 class="main-start__index-tagline">Взгляните на жизнь иначе!</h2>
 
         <section class="download-apps">
-          <button class="download-apps__download" type="button">Скачать приложение</button>
+          <a class="download-apps__download site-link" href="https://www.apple.com/ios/app-store/">Скачать приложение</a>
 
           <ul class="download-apps__list site-list">
             <li class="download-apps__item site-item">
-              <a class="site-link" href="#" aria-label="Ссылка на Эпп Стор">
+              <a class="site-link" href="https://www.apple.com/ios/app-store/" aria-label="Ссылка на Эпп Стор">
                 <svg width="46" height="57"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-istore"></use></svg>
               </a>
             </li>
 
             <li class="download-apps__item site-item">
-              <a class="site-link" href="#" aria-label="Ссылка на Гугл Стор">
+              <a class="site-link" href="https://play.google.com/store" aria-label="Ссылка на Гугл Стор">
                 <svg width="42" height="47"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-google-store"></use></svg>
               </a>
             </li>
 
             <li class="download-apps__item site-item">
-              <a class="site-link" href="#" aria-label="Ссылка на ПК">
+              <a class="site-link" href="https://www.microsoft.com/en-us/store/apps/windows" aria-label="Ссылка на ПК">
                 <svg width="44" height="42"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-windows"></use></svg>
               </a>
             </li>
@@ -355,13 +358,14 @@
 
         <section class="location">
           <p class="location__inv">Приезжайте в гости:</p>
-          <p class="location__address">ул. Большая<!-- fuck --> Конюшенная, 19/8</p>
+          <p class="location__address">ул. Большая Конюшенная, 19/8</p>
         </section>
       </div>
     </section>
 
     <section class="map">
       <h2 class="visually-hidden">Карта</h2>
+      <iframe  class="map__google" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d999.3839485860007!2d30.320445228152856!3d59.93599347833145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469631056267101b%3A0xa9be6d127c1fcba1!2z0KbQtdC90YLRgCDQuNGB0LrRg9GB0YHRgtCy0LAg0Lgg0LzRg9C30YvQutC4INCm0JPQn9CRINC40LwuINCSLtCSLiDQnNCw0Y_QutC-0LLRgdC60L7Qs9C-!5e0!3m2!1sru!2scz!4v1590501065381!5m2!1sru!2scz" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
     </section>
 
     <section class="main-footer main-footer--displaying">
@@ -401,7 +405,7 @@
         <div class="main-footer__academy-contaner">
           <p class="main-footer__developed">Разработано</p>
 
-          <a class="main-footer__academy-link site-link" href="https://htmlacademy.ru/">
+          <a class="main-footer__academy-link site-link" href="https://htmlacademy.ru/intensive/adaptive">
             <svg class="main-footer__academy-logo" xmlns="http://www.w3.org/2000/svg" width="26.943" height="34.09" viewBox="0 0 26.943 34.09">
               <path d="M13.62.017L13.472 0 0 1.412v24.661l13.472 8.017 13.43-7.99.042-.026V1.412L13.62.017zm11.399 12.11L13.495 5.334l-.001-.104-.087.05-.088-.056v.109L1.925 12.118V3.147l11.547-1.212 11.547 1.212v8.98zm-11.614-5.34L24.923 13.5l-4.479 2.64-7.093-4.221-.013 1.415 5.904 3.513-.86.507-5.031-2.992-.013 1.415 3.827 2.275-.782.523-3.032-1.787-.013 1.413 1.852 1.091-1.8 1.081-11.356-6.751 11.371-6.835zm-11.48 8.34l11.411 6.791.015 1.044-7.941-4.728-.015 1.416 7.979 4.796.017 1.076-7.972-4.741-.013 1.415 8.021 4.821.045.026 8.143-4.872v-1.268l-.011-.148v-3.761l3.415-2.036v10.02L13.472 31.85 1.925 24.979v-9.852z"/>
             </svg>
@@ -410,7 +414,6 @@
       </div>
     </section>
   </footer>
-
   <script src="js/main-nav.js"></script>
 </body>
 </html>
